@@ -1,0 +1,27 @@
+# Local secrets; safe examples remain trackable
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+.venv/
+venv/
+node_modules/
+dist/
+build/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+# Runtime databases and sidecars; use JSON fixtures instead
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*
+
+.verification/
+.runtime/
+*.log
