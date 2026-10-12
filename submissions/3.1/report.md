@@ -15,3 +15,5 @@ Completed design work: flow/sketch, model boundaries and relevant context, conve
 Unresolved: review of design/balloon asset fidelity; exact class model and current live provider access; new project configuration/dependencies/port availability; verified independent support resources; semantic model-response checks; recording workflow. No working app, exercise timing, DB persistence, browser app test or peer evaluation claimed. Original screenshots were not inspected; user-provided structured summary is the source.
 
 Prepared for design review; not submission-ready until repository/commit fields and accessible evidence are verified. Final student review and submission are pending.
+
+Follow-up execution completed actual app visual evidence and agent design/code review, linked in [browser observations](../../docs/browser-observations.md). Original design source remains afe33f9f605c9e536fc3b7ebdfa39f3c525862d7; source/URL fields are real. Student review and LMS submission remain separate. All local artifact links have been checked and source/evidence publicly pushed; HTML sketch requires local viewing, not a deployed service.

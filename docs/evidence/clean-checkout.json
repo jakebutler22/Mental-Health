@@ -1,0 +1,47 @@
+{
+  "source_commit": "8497873908b4318be2a1b8112c0401f466cd695b",
+  "source_status_after_checks": "",
+  "fresh_environment": true,
+  "database_path": "/Users/jakebutler/Documents/ChatGPT/Mental Health/.verification/checkout/backend/data/campus-pause.sqlite3",
+  "counts": {
+    "conversations": 1,
+    "messages": 2,
+    "model_requests": 1,
+    "sessions": 1
+  },
+  "sessions": [
+    {
+      "id": "afd04cab-46ef-48a1-b9d8-3f4a5e9426bf",
+      "request_id": "9d5166cd-88a2-4288-8492-68119a467c04",
+      "conversation_id": "dee1cca3-a031-46ad-a938-218ce38044be",
+      "skill": "breathing",
+      "state": "stopped",
+      "started_at": "2026-10-12T19:14:38.374572+00:00",
+      "ended_at": "2026-10-12T19:14:39.379229+00:00",
+      "active_elapsed_ms": 572,
+      "step": 0,
+      "cycles": 0,
+      "skipped_steps": "[]",
+      "version": 2
+    }
+  ],
+  "foreign_key_check": [],
+  "safe_health": {
+    "status": "ok",
+    "database_ready": true,
+    "mode": "mock",
+    "configuration_status": "mock",
+    "key_configured": false,
+    "model_configured": false,
+    "live_verified": false,
+    "live_call_limit": 50,
+    "live_attempts": 0
+  },
+  "restart_sessions_preserved": true,
+  "restart_counts": {
+    "conversations": 1,
+    "messages": 2,
+    "model_requests": 1,
+    "sessions": 1
+  }
+}
