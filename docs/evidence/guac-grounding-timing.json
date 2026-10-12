@@ -1,0 +1,15 @@
+{
+  "mode": "actual Chrome localhost mock-backed",
+  "assumption": "12 seconds per sense, tool/interaction overhead included; no voluntary pauses",
+  "observed": [
+    {
+      "elapsedMs": "80127.09999996424",
+      "entryMs": "13739.100000023842",
+      "finalInstructionFrameMs": "93895.8",
+      "firstInstructionFrameMs": "13761.7",
+      "guidedFrameDurationMs": "80134.1",
+      "state": "completed",
+      "step": "5"
+    }
+  ]
+}

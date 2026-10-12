@@ -1,0 +1,238 @@
+{
+  "health": {
+    "status": "ok",
+    "database_ready": true,
+    "mode": "mock",
+    "configuration_status": "mock",
+    "key_configured": false,
+    "model_configured": false,
+    "live_verified": false,
+    "live_call_limit": 50,
+    "live_attempts": 0
+  },
+  "results": [
+    {
+      "input": "Fictional student: I feel keyed up before my exam.",
+      "http_status": 200,
+      "response": {
+        "request_id": "guac-route-0",
+        "conversation_id": "eefec960-de8b-412e-87ee-d468febeb25a",
+        "status": "succeeded",
+        "mode": "mock",
+        "error_code": null,
+        "messages": [
+          {
+            "id": 5,
+            "conversation_id": "eefec960-de8b-412e-87ee-d468febeb25a",
+            "role": "user",
+            "text": "Fictional student: I feel keyed up before my exam.",
+            "created_at": "2026-10-12T21:52:10.392578+00:00",
+            "request_id": "guac-route-0",
+            "status": "succeeded"
+          },
+          {
+            "id": 6,
+            "conversation_id": "eefec960-de8b-412e-87ee-d468febeb25a",
+            "role": "assistant",
+            "text": "With the upcoming exam, you describe feeling keyed up.",
+            "created_at": "2026-10-12T21:52:10.393490+00:00",
+            "request_id": "guac-route-0",
+            "status": "succeeded"
+          }
+        ],
+        "result": {
+          "reflection": "With the upcoming exam, you describe feeling keyed up.",
+          "recommended_skill": "breathing",
+          "reason": "A steady rhythm may suit the keyed-up feeling you described.",
+          "clarification": null,
+          "action": "offer",
+          "acknowledgement": "With the upcoming exam, you describe feeling keyed up.",
+          "category": "contextual",
+          "suggested_skill": "breathing",
+          "choices": [
+            "breathing",
+            "grounding"
+          ],
+          "mode": "mock",
+          "configured_model_id": null,
+          "returned_model_id": null,
+          "limit_reached": false
+        }
+      }
+    },
+    {
+      "input": "No breathing. Actually I feel scattered by my roommate.",
+      "http_status": 200,
+      "response": {
+        "request_id": "guac-route-1",
+        "conversation_id": "eefec960-de8b-412e-87ee-d468febeb25a",
+        "status": "succeeded",
+        "mode": "mock",
+        "error_code": null,
+        "messages": [
+          {
+            "id": 7,
+            "conversation_id": "eefec960-de8b-412e-87ee-d468febeb25a",
+            "role": "user",
+            "text": "No breathing. Actually I feel scattered by my roommate.",
+            "created_at": "2026-10-12T21:52:10.394763+00:00",
+            "request_id": "guac-route-1",
+            "status": "succeeded"
+          },
+          {
+            "id": 8,
+            "conversation_id": "eefec960-de8b-412e-87ee-d468febeb25a",
+            "role": "assistant",
+            "text": "With the roommate situation, you describe feeling pulled into several thoughts.",
+            "created_at": "2026-10-12T21:52:10.395260+00:00",
+            "request_id": "guac-route-1",
+            "status": "succeeded"
+          }
+        ],
+        "result": {
+          "reflection": "With the roommate situation, you describe feeling pulled into several thoughts.",
+          "recommended_skill": "grounding",
+          "reason": "Noticing your surroundings may suit the scattered thoughts you described.",
+          "clarification": null,
+          "action": "offer",
+          "acknowledgement": "With the roommate situation, you describe feeling pulled into several thoughts.",
+          "category": "contextual",
+          "suggested_skill": "grounding",
+          "choices": [
+            "breathing",
+            "grounding"
+          ],
+          "mode": "mock",
+          "configured_model_id": null,
+          "returned_model_id": null,
+          "limit_reached": false
+        }
+      }
+    }
+  ],
+  "history": {
+    "id": "eefec960-de8b-412e-87ee-d468febeb25a",
+    "created_at": "2026-10-12T21:52:10.390321+00:00",
+    "updated_at": "2026-10-12T21:52:10.395294+00:00",
+    "fictional_title": "Fictional campus conversation",
+    "messages": [
+      {
+        "id": 5,
+        "conversation_id": "eefec960-de8b-412e-87ee-d468febeb25a",
+        "role": "user",
+        "text": "Fictional student: I feel keyed up before my exam.",
+        "created_at": "2026-10-12T21:52:10.392578+00:00",
+        "request_id": "guac-route-0",
+        "status": "succeeded",
+        "mode": "mock",
+        "sanitized_error_code": null,
+        "recommendation": {
+          "reflection": "With the upcoming exam, you describe feeling keyed up.",
+          "recommended_skill": "breathing",
+          "reason": "A steady rhythm may suit the keyed-up feeling you described.",
+          "clarification": null,
+          "action": "offer",
+          "acknowledgement": "With the upcoming exam, you describe feeling keyed up.",
+          "category": "contextual",
+          "suggested_skill": "breathing",
+          "choices": [
+            "breathing",
+            "grounding"
+          ],
+          "mode": "mock",
+          "configured_model_id": null,
+          "returned_model_id": null,
+          "limit_reached": false
+        }
+      },
+      {
+        "id": 6,
+        "conversation_id": "eefec960-de8b-412e-87ee-d468febeb25a",
+        "role": "assistant",
+        "text": "With the upcoming exam, you describe feeling keyed up.",
+        "created_at": "2026-10-12T21:52:10.393490+00:00",
+        "request_id": "guac-route-0",
+        "status": "succeeded",
+        "mode": "mock",
+        "sanitized_error_code": null,
+        "recommendation": {
+          "reflection": "With the upcoming exam, you describe feeling keyed up.",
+          "recommended_skill": "breathing",
+          "reason": "A steady rhythm may suit the keyed-up feeling you described.",
+          "clarification": null,
+          "action": "offer",
+          "acknowledgement": "With the upcoming exam, you describe feeling keyed up.",
+          "category": "contextual",
+          "suggested_skill": "breathing",
+          "choices": [
+            "breathing",
+            "grounding"
+          ],
+          "mode": "mock",
+          "configured_model_id": null,
+          "returned_model_id": null,
+          "limit_reached": false
+        }
+      },
+      {
+        "id": 7,
+        "conversation_id": "eefec960-de8b-412e-87ee-d468febeb25a",
+        "role": "user",
+        "text": "No breathing. Actually I feel scattered by my roommate.",
+        "created_at": "2026-10-12T21:52:10.394763+00:00",
+        "request_id": "guac-route-1",
+        "status": "succeeded",
+        "mode": "mock",
+        "sanitized_error_code": null,
+        "recommendation": {
+          "reflection": "With the roommate situation, you describe feeling pulled into several thoughts.",
+          "recommended_skill": "grounding",
+          "reason": "Noticing your surroundings may suit the scattered thoughts you described.",
+          "clarification": null,
+          "action": "offer",
+          "acknowledgement": "With the roommate situation, you describe feeling pulled into several thoughts.",
+          "category": "contextual",
+          "suggested_skill": "grounding",
+          "choices": [
+            "breathing",
+            "grounding"
+          ],
+          "mode": "mock",
+          "configured_model_id": null,
+          "returned_model_id": null,
+          "limit_reached": false
+        }
+      },
+      {
+        "id": 8,
+        "conversation_id": "eefec960-de8b-412e-87ee-d468febeb25a",
+        "role": "assistant",
+        "text": "With the roommate situation, you describe feeling pulled into several thoughts.",
+        "created_at": "2026-10-12T21:52:10.395260+00:00",
+        "request_id": "guac-route-1",
+        "status": "succeeded",
+        "mode": "mock",
+        "sanitized_error_code": null,
+        "recommendation": {
+          "reflection": "With the roommate situation, you describe feeling pulled into several thoughts.",
+          "recommended_skill": "grounding",
+          "reason": "Noticing your surroundings may suit the scattered thoughts you described.",
+          "clarification": null,
+          "action": "offer",
+          "acknowledgement": "With the roommate situation, you describe feeling pulled into several thoughts.",
+          "category": "contextual",
+          "suggested_skill": "grounding",
+          "choices": [
+            "breathing",
+            "grounding"
+          ],
+          "mode": "mock",
+          "configured_model_id": null,
+          "returned_model_id": null,
+          "limit_reached": false
+        }
+      }
+    ],
+    "sessions": []
+  }
+}

@@ -3,11 +3,11 @@
   "cases": [
     {
       "case": "E01",
-      "action": "Fictional exam tomorrow",
-      "expected": "Context category affects safe acknowledgement; both skills remain choices",
+      "action": "Fictional exam tomorrow; I feel tense",
+      "expected": "Current feeling/context affects recommendation; reflection/reason and both choices remain",
       "mode": "TestClient/mock",
       "observed": {
-        "category": "exam",
+        "recommended_skill": "breathing",
         "mode": "mock",
         "message_count": 2,
         "choices": [
@@ -19,11 +19,11 @@
     },
     {
       "case": "E02",
-      "action": "Fictional roommate noise",
-      "expected": "Context category affects safe acknowledgement; both skills remain choices",
+      "action": "Fictional roommate noise; my thoughts keep looping",
+      "expected": "Current feeling/context affects recommendation; reflection/reason and both choices remain",
       "mode": "TestClient/mock",
       "observed": {
-        "category": "roommate",
+        "recommended_skill": "grounding",
         "mode": "mock",
         "message_count": 2,
         "choices": [
@@ -35,11 +35,11 @@
     },
     {
       "case": "E03",
-      "action": "Fictional assignment deadline",
-      "expected": "Context category affects safe acknowledgement; both skills remain choices",
+      "action": "Fictional assignment deadline; I feel keyed up",
+      "expected": "Current feeling/context affects recommendation; reflection/reason and both choices remain",
       "mode": "TestClient/mock",
       "observed": {
-        "category": "workload",
+        "recommended_skill": "breathing",
         "mode": "mock",
         "message_count": 2,
         "choices": [
@@ -51,11 +51,11 @@
     },
     {
       "case": "E04",
-      "action": "Fictional club meeting",
-      "expected": "Context category affects safe acknowledgement; both skills remain choices",
+      "action": "Fictional club meeting; I feel scattered",
+      "expected": "Current feeling/context affects recommendation; reflection/reason and both choices remain",
       "mode": "TestClient/mock",
       "observed": {
-        "category": "social",
+        "recommended_skill": "grounding",
         "mode": "mock",
         "message_count": 2,
         "choices": [
@@ -68,10 +68,10 @@
     {
       "case": "E05",
       "action": "Fictional campus afternoon",
-      "expected": "Context category affects safe acknowledgement; both skills remain choices",
+      "expected": "Current feeling/context affects recommendation; reflection/reason and both choices remain",
       "mode": "TestClient/mock",
       "observed": {
-        "category": "general",
+        "recommended_skill": null,
         "mode": "mock",
         "message_count": 2,
         "choices": [

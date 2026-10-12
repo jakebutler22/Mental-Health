@@ -1,0 +1,13 @@
+# Guac fictional evaluation
+
+Current revision: [product direction](../prompts/11-guac-product-direction.md). [Historical evaluation](evaluation.md) and original evidence remain separate. All inputs are fictional; mocked interpretation and transport fixtures do not establish live-model success.
+
+The backend suite covers contextual breathing/grounding, preferences/negation/corrections, neither/stop, optional clarification once across restart, unsupported/conflicting output, provider failure, late writes/clear/idempotency, additive migration and separate recommendation/actual choice. The frontend suite covers deliberate primary/alternative actions, contract failures, stale request gates, session queues and unchanged 4/6 clock/reduced-motion duration. Actual root verification:54backend tests,20frontend tests,20/20general evaluation,26/26Guac evaluation andproduction build pass. Clean source checkout is recorded separately.
+
+Repeatable scripts: `PYTHONPATH=backend backend/.venv/bin/python scripts/evaluate_backend.py` and `PYTHONPATH=backend backend/.venv/bin/python scripts/evaluate_guac.py`. See [current general results](evidence/backend-evaluation.json), [Guac context results](evidence/guac-context-evaluation.json), [independent review](guac-review.md) and [real browser observations](guac-browser-observations.md).
+
+Three behaviors remain separate: A support usable during normal/loading/failure states; B deliberate selection, pause, stop and leaving without required conversation; C fixed exercise timing/steps and truthful persistence despite model response/failure. API/Node checks establish boundaries; browser evidence establishes actual interface actions and appearance.
+
+Observed revision finding: latest-feeling correction originally dropped an earlier skill prohibition; “No breathing. Actually I feel keyed up” exposed the error. Choice events now scan the entire current message and can be reversed only by a later explicit preference. A preference-only mock also invented a feeling, so reflection now acknowledges the stated preference/context. Both were source-review findings verified by regression tests, not live-model observations.
+
+Current own backend credential is absent; previously authorized prior key returned401. No successful live call occurred in this revision. Official model catalog still lists nvidia/nemotron-3.5-lightning:free at zero prompt/completion price, separately from authentication. Run the revised small repeated live selection only with a valid local credential; no paid/model fallback. Live variation, real software keyboard/low-end device behavior, actual video recordings, student review and another person's clean checkout remain pending until observed.

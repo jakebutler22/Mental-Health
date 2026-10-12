@@ -30,6 +30,8 @@ def row_dict(row):
     if row is None:
         return None
     result = dict(row)
+    if 'result_json' in result:
+        result['recommendation']=json.loads(result.pop('result_json')) if result['result_json'] else None
     if 'skipped_steps' in result:
         result['skipped_steps'] = json.loads(result['skipped_steps'])
     for key in ('simple_view', 'reduced_motion'):
@@ -70,6 +72,10 @@ def initialize_database(path):
           simple_view INTEGER NOT NULL DEFAULT 0, reduced_motion INTEGER NOT NULL DEFAULT 0);
         INSERT OR IGNORE INTO preferences(singleton) VALUES(1);
         ''')
+        session_columns={r['name'] for r in db.execute('PRAGMA table_info(sessions)')}
+        for name,definition in [('recommendation_request_id','TEXT REFERENCES model_requests(request_id) ON DELETE SET NULL'),('recommended_skill','TEXT'),('recommendation_reason','TEXT')]:
+            if name not in session_columns:
+                db.execute(f'ALTER TABLE sessions ADD COLUMN {name} {definition}')
         columns={r['name'] for r in db.execute('PRAGMA table_info(model_requests)')}
         if 'result_json' not in columns:
             db.execute('ALTER TABLE model_requests ADD COLUMN result_json TEXT')

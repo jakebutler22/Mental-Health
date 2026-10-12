@@ -1,0 +1,22 @@
+{
+  "before": {
+    "data": {
+      "elapsedMs": "11435.600000023842",
+      "entryMs": "111787.19999998808",
+      "firstInstructionFrameMs": "111812.5",
+      "phase": "inhale",
+      "state": "paused"
+    },
+    "style": "transform: scale(0.759949, 0.823492); filter: hue-rotate(85deg) saturate(0.68);"
+  },
+  "after": {
+    "data": {
+      "elapsedMs": "11435.600000023842",
+      "entryMs": "111787.19999998808",
+      "firstInstructionFrameMs": "111812.5",
+      "phase": "inhale",
+      "state": "paused"
+    },
+    "style": "transform: scale(0.759949, 0.823492); filter: hue-rotate(85deg) saturate(0.68);"
+  }
+}

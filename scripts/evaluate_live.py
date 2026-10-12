@@ -12,10 +12,13 @@ if settings.mode != 'live' or not settings.live_configured:
 controller = ModelController(replace(settings, live_call_limit=min(6, settings.live_call_limit)))
 results = []
 for repetition in range(2):
-    for text in ('Fictional student: I have an exam tomorrow.', 'Fictional student: My roommate is noisy while I study.'):
+    for text in ('Fictional student: I feel tense and keyed up before an exam tomorrow.', 'Fictional student: My thoughts keep looping about roommate noise; I feel scattered.'):
         started = time.monotonic()
         try:
-            result = {'status': 'passed', 'result': asdict(controller.respond(text))}
+            observed = asdict(controller.respond(text))
+            expected = 'breathing' if 'keyed up' in text else 'grounding'
+            matches = observed['mode'] == 'live' and observed['recommended_skill'] == expected and bool(observed['reflection']) and bool(observed['reason'])
+            result = {'status': 'passed' if matches else 'unexpected', 'expected_skill': expected, 'result': observed}
         except ModelFailure as error:
             result = {'status': 'failed', 'code': error.code}
         result.update(input=text, repetition=repetition + 1, elapsed_seconds=round(time.monotonic()-started, 3), attempts=controller.attempts)

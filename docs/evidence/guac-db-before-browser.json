@@ -1,0 +1,76 @@
+{
+  "database_file": "backend/data/campus-pause.sqlite3",
+  "table_counts": {
+    "conversations": 2,
+    "messages": 8,
+    "model_requests": 4,
+    "sessions": 5,
+    "preferences": 1
+  },
+  "session_columns": [
+    "id",
+    "request_id",
+    "conversation_id",
+    "skill",
+    "state",
+    "started_at",
+    "ended_at",
+    "active_elapsed_ms",
+    "step",
+    "cycles",
+    "skipped_steps",
+    "version",
+    "recommendation_request_id",
+    "recommended_skill",
+    "recommendation_reason"
+  ],
+  "foreign_key_violations": [],
+  "preferences": {
+    "singleton": 1,
+    "explicit_balloon_color": null,
+    "simple_view": 0,
+    "reduced_motion": 0
+  },
+  "sessions": [
+    {
+      "id": "93975fea-558a-4495-8a88-b54165ec9b7f",
+      "skill": "breathing",
+      "state": "stopped",
+      "active_elapsed_ms": 595,
+      "recommendation_request_id": null,
+      "recommended_skill": null
+    },
+    {
+      "id": "f7a4fce1-fdf2-4b4d-b039-a323d161ba2d",
+      "skill": "breathing",
+      "state": "completed",
+      "active_elapsed_ms": 60000,
+      "recommendation_request_id": null,
+      "recommended_skill": null
+    },
+    {
+      "id": "2974b37c-8bb0-41e2-b612-d6e370ca3172",
+      "skill": "grounding",
+      "state": "completed",
+      "active_elapsed_ms": 9848,
+      "recommendation_request_id": null,
+      "recommended_skill": null
+    },
+    {
+      "id": "78d3314f-a437-41eb-ab23-c5fec37c9b32",
+      "skill": "grounding",
+      "state": "stopped",
+      "active_elapsed_ms": 4781,
+      "recommendation_request_id": null,
+      "recommended_skill": null
+    },
+    {
+      "id": "001ac9dc-5327-4ed7-ad25-687b3ff304d5",
+      "skill": "breathing",
+      "state": "interrupted",
+      "active_elapsed_ms": 34365,
+      "recommendation_request_id": null,
+      "recommended_skill": null
+    }
+  ]
+}

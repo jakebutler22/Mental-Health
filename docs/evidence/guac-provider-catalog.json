@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-12",
+  "source": "https://openrouter.ai/api/v1/models",
+  "model": {
+    "id": "nvidia/nemotron-3.5-lightning:free",
+    "pricing": {
+      "prompt": "0",
+      "completion": "0"
+    },
+    "supported_parameters": [
+      "include_reasoning",
+      "max_tokens",
+      "reasoning",
+      "seed",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_p"
+    ],
+    "architecture": {
+      "modality": "text->text",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Other",
+      "instruct_type": null
+    }
+  }
+}

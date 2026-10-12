@@ -14,3 +14,5 @@ Agent review and actual checks:30backend tests,15frontend tests,20repeatable eva
 Coursework prototype only, fictional scenarios; no diagnosis, therapy, clinical effectiveness or monitoring. Source published; runtime remains localhost. Student review and successful live contribution remain pending; this is not a claim of completed submission.
 
 Reviewed main source checkpoint: [8497873908b4318be2a1b8112c0401f466cd695b](https://github.com/jakebutler22/Mental-Health/tree/8497873908b4318be2a1b8112c0401f466cd695b); preserved source is identical to clean-checkout verified application. Report fields recorded afterward to avoid self-referential commit claims. No LMS submission made.
+
+Later Guac revision: [updated design](../../docs/design-pipeline.md), [contextual evaluation](../../docs/guac-evaluation.md), [current browser evidence](../../docs/guac-browser-observations.md). This report preserves its original verified milestone source; Part3.3 identifies the new final source.

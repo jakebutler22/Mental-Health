@@ -33,11 +33,12 @@ def register_model_routes(app):
                 return saved_response(db,old)
             if db.execute("SELECT 1 FROM model_requests WHERE conversation_id=? AND status='pending'",(conversation_id,)).fetchone(): raise HTTPException(409,'conversation_request_in_progress')
             history=[row_dict(r) for r in db.execute('SELECT role,text FROM messages WHERE conversation_id=? ORDER BY id DESC LIMIT 6',(conversation_id,))][::-1]
+            clarification_used=any(json.loads(r['result_json']).get('action')=='clarify' for r in db.execute("SELECT result_json FROM model_requests WHERE conversation_id=? AND status='succeeded' AND result_json IS NOT NULL",(conversation_id,)))
             recent=[row_dict(r) for r in db.execute("SELECT skill,state FROM sessions WHERE conversation_id=? AND state IN ('completed','stopped','interrupted') ORDER BY started_at DESC LIMIT 3",(conversation_id,))]
             db.execute('INSERT INTO model_requests(request_id,conversation_id,status,mode,configured_model_id,created_at) VALUES(?,?,?,?,?,?)',(data.request_id,conversation_id,'pending',controller.settings.mode,controller.settings.model or None,now()))
             db.execute("INSERT INTO messages(conversation_id,role,text,created_at,request_id,status) VALUES(?,'user',?,?,?,'pending')",(conversation_id,text,now(),data.request_id))
         try:
-            result=asdict(controller.respond(text,history,recent))
+            result=asdict(controller.respond(text,history,recent,clarification_used=clarification_used))
             code=None
         except ModelFailure as error:
             result=None
