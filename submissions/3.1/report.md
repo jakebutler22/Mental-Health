@@ -2,9 +2,9 @@
 
 Due October 15, 2026, 11:59 PM Eastern. Individual Campus Pause coursework prototype.
 
-Repository URL: **PENDING — no remote configured**.
-Submitted source commit: **PENDING — unborn main, no commit**.
-Accessible hosted evidence links: **PENDING — local relative links only, verify after publication to repository**.
+Repository URL: https://github.com/jakebutler22/Mental-Health.
+Submitted source commit: afe33f9f605c9e536fc3b7ebdfa39f3c525862d7.
+Accessible hosted evidence links: Source artifacts published at the repository; HTML mockup must be downloaded/opened locally. Visual review remains pending..
 
 Design: warm cream/sage, optional short chat and direct skill entry; paced breathing 4s in/6s out with realistic balloon candidate; sensory grounding 5 seen/4 felt/3 heard/2 smelled/1 tasted. Fixed app sequences, pause/stop and support independent of model. Six breathing cycles take 60s; expected full instruction sequence 65s; grounding 65s under stated response assumptions. Timing not observed yet.
 
