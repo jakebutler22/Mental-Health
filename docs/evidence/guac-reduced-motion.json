@@ -1,0 +1,22 @@
+{
+  "before": {
+    "data": {
+      "elapsedMs": "5558.599999964237",
+      "entryMs": "320871.5",
+      "firstInstructionFrameMs": "320895.1",
+      "phase": "exhale",
+      "state": "active"
+    },
+    "style": "transform: scale(0.847, 0.8875); filter: none;"
+  },
+  "after": {
+    "data": {
+      "elapsedMs": "10592.399999976158",
+      "entryMs": "320871.5",
+      "firstInstructionFrameMs": "320895.1",
+      "phase": "inhale",
+      "state": "active"
+    },
+    "style": "transform: scale(0.847, 0.8875); filter: none;"
+  }
+}

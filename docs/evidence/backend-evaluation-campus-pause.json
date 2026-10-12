@@ -1,0 +1,282 @@
+{
+  "scope": "Repeatable backend/API/model-transport fixtures only; not browser or actual live provider evidence",
+  "cases": [
+    {
+      "case": "E01",
+      "action": "Fictional exam tomorrow",
+      "expected": "Context category affects safe acknowledgement; both skills remain choices",
+      "mode": "TestClient/mock",
+      "observed": {
+        "category": "exam",
+        "mode": "mock",
+        "message_count": 2,
+        "choices": [
+          "breathing",
+          "grounding"
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "case": "E02",
+      "action": "Fictional roommate noise",
+      "expected": "Context category affects safe acknowledgement; both skills remain choices",
+      "mode": "TestClient/mock",
+      "observed": {
+        "category": "roommate",
+        "mode": "mock",
+        "message_count": 2,
+        "choices": [
+          "breathing",
+          "grounding"
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "case": "E03",
+      "action": "Fictional assignment deadline",
+      "expected": "Context category affects safe acknowledgement; both skills remain choices",
+      "mode": "TestClient/mock",
+      "observed": {
+        "category": "workload",
+        "mode": "mock",
+        "message_count": 2,
+        "choices": [
+          "breathing",
+          "grounding"
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "case": "E04",
+      "action": "Fictional club meeting",
+      "expected": "Context category affects safe acknowledgement; both skills remain choices",
+      "mode": "TestClient/mock",
+      "observed": {
+        "category": "social",
+        "mode": "mock",
+        "message_count": 2,
+        "choices": [
+          "breathing",
+          "grounding"
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "case": "E05",
+      "action": "Fictional campus afternoon",
+      "expected": "Context category affects safe acknowledgement; both skills remain choices",
+      "mode": "TestClient/mock",
+      "observed": {
+        "category": "general",
+        "mode": "mock",
+        "message_count": 2,
+        "choices": [
+          "breathing",
+          "grounding"
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "case": "E06",
+      "action": "Fictional exam; injected timeout",
+      "expected": "Failed user message preserved; no invented assistant",
+      "mode": "TestClient/mock",
+      "observed": {
+        "status": "failed",
+        "error_code": "provider_timeout",
+        "assistant_messages": 0
+      },
+      "status": "pass"
+    },
+    {
+      "case": "E07",
+      "action": "Fictional exam; injected empty",
+      "expected": "Failed user message preserved; no invented assistant",
+      "mode": "TestClient/mock",
+      "observed": {
+        "status": "failed",
+        "error_code": "empty_response",
+        "assistant_messages": 0
+      },
+      "status": "pass"
+    },
+    {
+      "case": "E08",
+      "action": "Fictional exam; injected malformed",
+      "expected": "Failed user message preserved; no invented assistant",
+      "mode": "TestClient/mock",
+      "observed": {
+        "status": "failed",
+        "error_code": "malformed_response",
+        "assistant_messages": 0
+      },
+      "status": "pass"
+    },
+    {
+      "case": "E09",
+      "action": "Fictional exam; injected conflict",
+      "expected": "Failed user message preserved; no invented assistant",
+      "mode": "TestClient/mock",
+      "observed": {
+        "status": "failed",
+        "error_code": "instruction_conflict",
+        "assistant_messages": 0
+      },
+      "status": "pass"
+    },
+    {
+      "case": "E10",
+      "action": "Fictional exam; injected failure",
+      "expected": "Failed user message preserved; no invented assistant",
+      "mode": "TestClient/mock",
+      "observed": {
+        "status": "failed",
+        "error_code": "provider_unavailable",
+        "assistant_messages": 0
+      },
+      "status": "pass"
+    },
+    {
+      "case": "E11",
+      "action": "Live mode with absent key/model",
+      "expected": "Honest missing-configuration failure",
+      "mode": "TestClient/mock",
+      "observed": {
+        "status": "failed",
+        "error_code": "missing_configuration",
+        "actual_provider_attempts": 0
+      },
+      "status": "pass"
+    },
+    {
+      "case": "E12",
+      "action": "Repeat same request ID; then alter its text",
+      "expected": "Idempotent replay; conflicting text rejected",
+      "mode": "TestClient/mock",
+      "observed": {
+        "same_saved_response": true,
+        "message_count": 2,
+        "changed_input_status": 409
+      },
+      "status": "pass"
+    },
+    {
+      "case": "E13",
+      "action": "Direct breathing, save pause, restart API",
+      "expected": "No model dependency; record remains interrupted and related",
+      "mode": "TestClient/mock",
+      "observed": {
+        "conversation_id": null,
+        "duplicate_records": 1,
+        "restart_state": "interrupted",
+        "saved_elapsed_ms": 2500,
+        "foreign_key_violations": 0
+      },
+      "status": "pass"
+    },
+    {
+      "case": "E14",
+      "action": "Five API grounding steps with first sense skipped",
+      "expected": "Completion retains skip; no claim of full unskipped sequence",
+      "mode": "TestClient/mock",
+      "observed": {
+        "state": "completed",
+        "step": 5,
+        "skipped_steps": [
+          0
+        ],
+        "synthetic_active_ms": 60000,
+        "duration_measured_in_browser": false
+      },
+      "status": "pass"
+    },
+    {
+      "case": "E15",
+      "action": "Choose blue/simple/reduced, restart, clear preferences",
+      "expected": "Explicit preferences durable and resettable",
+      "mode": "TestClient/mock",
+      "observed": {
+        "color_survived_restart": "blue",
+        "simple_view": true,
+        "reduced_motion": true,
+        "reset_verified": true
+      },
+      "status": "pass"
+    },
+    {
+      "case": "E16",
+      "action": "Empty, maximum, over-maximum fictional messages",
+      "expected": "Reject empty and >500; accept 500",
+      "mode": "TestClient/mock",
+      "observed": {
+        "empty_status": 422,
+        "501_characters_status": 422,
+        "500_characters_status": 200
+      },
+      "status": "pass"
+    },
+    {
+      "case": "E17",
+      "action": "50 failed injected provider attempts, then next request",
+      "expected": "Cap counts failed attempts and returns labeled mock",
+      "mode": "httpx.MockTransport; no live access",
+      "observed": {
+        "mock_transport_attempts": 50,
+        "actual_network_attempts": 0,
+        "failed_attempts_counted": 50,
+        "next_mode": "mock",
+        "limit_reached": true
+      },
+      "status": "pass"
+    },
+    {
+      "case": "E18",
+      "action": "Injected model tries to add breath-hold instructions",
+      "expected": "Extra fields rejected before UI result",
+      "mode": "httpx.MockTransport; no live access",
+      "observed": {
+        "error_code": "instruction_conflict",
+        "generated_instructions_displayed": false,
+        "actual_network_attempts": 0
+      },
+      "status": "pass"
+    },
+    {
+      "case": "E19",
+      "action": "Inspect mock health configuration",
+      "expected": "Honest safe health without secret values",
+      "mode": "TestClient/mock",
+      "observed": {
+        "mode": "mock",
+        "live_verified": false,
+        "live_attempts": 0,
+        "secret_value_fields": 0
+      },
+      "status": "pass"
+    },
+    {
+      "case": "E20",
+      "action": "Clear linked fictional conversation and session history",
+      "expected": "Cascade removes history; deliberate preference retained",
+      "mode": "TestClient/mock",
+      "observed": {
+        "deleted_table_counts": {
+          "conversations": 0,
+          "messages": 0,
+          "model_requests": 0,
+          "sessions": 0
+        },
+        "preference_preserved": "plum",
+        "foreign_key_violations": 0
+      },
+      "status": "pass"
+    }
+  ],
+  "passed": 20,
+  "failed": 0
+}

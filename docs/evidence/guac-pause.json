@@ -1,0 +1,22 @@
+{
+  "before": {
+    "balloon": "transform: scale(0.969973, 0.977921); filter: hue-rotate(85deg) saturate(0.68);",
+    "data": {
+      "elapsedMs": "5098.699999988079",
+      "entryMs": "111787.19999998808",
+      "firstInstructionFrameMs": "111812.5",
+      "phase": "exhale",
+      "state": "paused"
+    }
+  },
+  "after": {
+    "balloon": "transform: scale(0.969973, 0.977921); filter: hue-rotate(85deg) saturate(0.68);",
+    "data": {
+      "elapsedMs": "5098.699999988079",
+      "entryMs": "111787.19999998808",
+      "firstInstructionFrameMs": "111812.5",
+      "phase": "exhale",
+      "state": "paused"
+    }
+  }
+}

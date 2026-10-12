@@ -1,0 +1,102 @@
+{
+  "sessions": [
+    {
+      "id": "93975fea-558a-4495-8a88-b54165ec9b7f",
+      "skill": "breathing",
+      "state": "stopped",
+      "active_elapsed_ms": 595,
+      "cycles": 0,
+      "recommendation_request_id": null,
+      "recommended_skill": null,
+      "recommendation_reason": null
+    },
+    {
+      "id": "f7a4fce1-fdf2-4b4d-b039-a323d161ba2d",
+      "skill": "breathing",
+      "state": "completed",
+      "active_elapsed_ms": 60000,
+      "cycles": 6,
+      "recommendation_request_id": null,
+      "recommended_skill": null,
+      "recommendation_reason": null
+    },
+    {
+      "id": "2974b37c-8bb0-41e2-b612-d6e370ca3172",
+      "skill": "grounding",
+      "state": "completed",
+      "active_elapsed_ms": 9848,
+      "cycles": 0,
+      "recommendation_request_id": null,
+      "recommended_skill": null,
+      "recommendation_reason": null
+    },
+    {
+      "id": "78d3314f-a437-41eb-ab23-c5fec37c9b32",
+      "skill": "grounding",
+      "state": "stopped",
+      "active_elapsed_ms": 4781,
+      "cycles": 0,
+      "recommendation_request_id": null,
+      "recommended_skill": null,
+      "recommendation_reason": null
+    },
+    {
+      "id": "001ac9dc-5327-4ed7-ad25-687b3ff304d5",
+      "skill": "breathing",
+      "state": "interrupted",
+      "active_elapsed_ms": 34365,
+      "cycles": 3,
+      "recommendation_request_id": null,
+      "recommended_skill": null,
+      "recommendation_reason": null
+    },
+    {
+      "id": "8c85e9be-3d5a-416d-b812-7a3edef50144",
+      "skill": "grounding",
+      "state": "completed",
+      "active_elapsed_ms": 80127,
+      "cycles": 0,
+      "recommendation_request_id": "a286a2fa-a4de-4c1a-af14-6af5847c8331",
+      "recommended_skill": "breathing",
+      "recommendation_reason": "A steady rhythm may suit the keyed-up feeling you described."
+    },
+    {
+      "id": "dff99ec4-0fd9-4d8d-a010-738d31511404",
+      "skill": "breathing",
+      "state": "stopped",
+      "active_elapsed_ms": 11435,
+      "cycles": 1,
+      "recommendation_request_id": null,
+      "recommended_skill": null,
+      "recommendation_reason": null
+    },
+    {
+      "id": "8f665d6e-32fb-4ee3-9ff0-a3f292da4a4d",
+      "skill": "breathing",
+      "state": "completed",
+      "active_elapsed_ms": 60000,
+      "cycles": 6,
+      "recommendation_request_id": null,
+      "recommended_skill": null,
+      "recommendation_reason": null
+    },
+    {
+      "id": "78cb7c18-fbd6-43e7-b769-18c0e75554a9",
+      "skill": "breathing",
+      "state": "stopped",
+      "active_elapsed_ms": 11415,
+      "cycles": 1,
+      "recommendation_request_id": null,
+      "recommended_skill": null,
+      "recommendation_reason": null
+    }
+  ],
+  "preferences": {
+    "singleton": 1,
+    "explicit_balloon_color": "red",
+    "simple_view": 0,
+    "reduced_motion": 1
+  },
+  "messages": 16,
+  "foreign_key_violations": []
+}

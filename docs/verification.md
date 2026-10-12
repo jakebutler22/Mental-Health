@@ -1,5 +1,9 @@
 # Verification plan and capability record
 
+Current Guac checks: [backend checkpoint](guac-backend-checkpoints.md), [frontend checkpoint](guac-frontend-checkpoints.md), [evaluation](guac-evaluation.md), [actual browser observations](guac-browser-observations.md). The initial notes below are historical phase-specific observations; they do not describe the current implemented app.
+
+## Historical initial inspection
+
 No working application tests have run. Design artifact inspection is distinct from browser behavior verification.
 
 Observed host tools: Python 3.14.7, Node v24.12.0, screencapture and qlmanage present. ffmpeg and dot not found on PATH. No project dependency imports/install checks performed. CUA inventory exposes Chrome extension and Codex in-app browser, plus native Safari/Chrome and DB Browser. Chrome has an earlier localhost app tab; it was not operated. Browser recording API is not exposed in CUA documentation; screen recording workflow/encoding remains unverified. Presence of screencapture does not prove video permission/capability. Existing SVG/HTML preview needs no app dependencies.

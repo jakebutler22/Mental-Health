@@ -34,7 +34,7 @@ def test_crud_restart_relationships(tmp_path):
             stored=dict(db.execute('SELECT * FROM sessions').fetchone())
             assert stored['conversation_id']==cid and stored['state']=='paused'
             with pytest.raises(sqlite3.IntegrityError):
-                db.execute("INSERT INTO sessions VALUES('bad','bad','absent','breathing','active','x',NULL,0,0,0,'[]',0)")
+                db.execute("INSERT INTO sessions(id,request_id,conversation_id,skill,state,started_at,active_elapsed_ms,step,cycles,skipped_steps,version) VALUES('bad','bad','absent','breathing','active','x',0,0,0,'[]',0)")
     with TestClient(create_app(path)) as client:
         row=client.get('/api/sessions').json()['items'][0]
         assert row['state']=='interrupted' and row['active_elapsed_ms']==2000 and row['ended_at']

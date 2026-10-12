@@ -1,10 +1,10 @@
-# Campus Pause workspace instructions
+# Guac workspace instructions
 
 Confirmed write root: `/Users/jakebutler/Documents/ChatGPT/Mental Health`. Quote paths with spaces. Inspect and preserve changes before editing. The earlier `/Users/jakebutler/Documents/ChatGPT/Expedia-lite` is read-only reference; never run, install into, or modify it, or copy its database or credentials.
 
 Read README.md, handoffs/current.md, docs/assignment-source.md and docs/class-working-rules.md before work. The supplied summary is the assignment source; absent original screenshots were not independently inspected. Follow all 15 rules below, reproduced from the supplied prompt.
 
-Scope: Vue, FastAPI, SQLite, localhost; fictional college scenarios; cream/sage short chat plus direct entry; paced breathing (4 in/6 out), sensory grounding (5/4/3/2/1). No STOP, reframe, speech, deployment, diagnosis, or implied monitoring. App controls sequence, timing, navigation, pause/stop and persistent support; model cannot own these. Both skills by final milestone.
+Scope: Vue, FastAPI, SQLite, localhost; fictional college scenarios; avocado visual system, conversation-first with direct entry; paced breathing (4 in/6 out), sensory grounding (5/4/3/2/1). No STOP, reframe, speech, deployment, diagnosis, or implied monitoring. App controls sequence, timing, navigation, pause/stop and persistent support; model cannot own these. Both skills by final milestone.
 
 
 
@@ -27,3 +27,5 @@ Carry these into the project:
 
 
 Standing user authorization (October 12): dependencies, implementation, verification, fictional live requests, branches, commits, merges, public source repository/push. No deployment or LMS submission. Agent review is distinct from student review. Follow prompts/00-autonomous-execution.md through all phases.
+
+Current product authority: prompts/11-guac-product-direction.md. Application is Guac; folder/setup unchanged. Avocado green default preserves explicitly chosen color. Contextual recommendation+reason, explicit preference/negation/corrections override inference; accept neither/stop, at most one optional clarification. Persist recommendation separately from chosen skill. Preserve historical evidence/source references.

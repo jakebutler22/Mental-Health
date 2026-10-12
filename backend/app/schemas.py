@@ -8,6 +8,7 @@ class SessionStart(StrictModel):
     request_id: str = Field(min_length=1, max_length=100, pattern=r'^[a-zA-Z0-9_-]+$')
     skill: Literal['breathing', 'grounding']
     conversation_id: str | None = None
+    recommendation_request_id: str | None = None
 
 class SessionUpdate(StrictModel):
     version: int = Field(ge=0, strict=True)

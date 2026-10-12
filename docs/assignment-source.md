@@ -85,3 +85,7 @@ The breathing exercise's central visual is a hyperrealistic latex balloon:
 - Treat size as a pacing cue, not a measurement of actual lung volume. Do not add breath holds or forceful breathing instructions.
 
 Evaluate feasible rendering approaches against visual fidelity, color changes, timing, performance, and dependency cost. A high-resolution asset with controlled deformation is a candidate, not verified proof of hyperrealism. Show the proposed low, middle, and full inflation states. Do not lock in an approach or claim the final appearance without a visual check.
+
+## Current product revision
+
+The original brief above is preserved as assignment provenance. [User product direction](../prompts/11-guac-product-direction.md) supersedes the provisional name, cream/sage-only palette and red default: Guac, avocado tokens, green default with saved color preserved, contextual structured reflection/recommendation/reason and separately saved actual choice. It does not alter the required skills, timing, stack or milestones.

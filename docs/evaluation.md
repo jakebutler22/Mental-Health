@@ -1,3 +1,7 @@
+# Historical Campus Pause evaluation
+
+This record describes source 8497873908b4318be2a1b8112c0401f466cd695b before the Guac revision. Its recorded category contract is historical. See [current Guac evaluation](guac-evaluation.md). The original machine results are preserved in [archived JSON](evidence/backend-evaluation-campus-pause.json).
+
 # Fictional scenario evaluation
 
 October 12, 2026. Actual repeatable backend checks: **20 passed, 0 failed**. Run `backend/.venv/bin/python scripts/evaluate_backend.py` from the project root. Temporary databases are created beneath this root and removed afterward. No actual provider network call occurs; injected `httpx.MockTransport` responses are explicitly fixture evidence even when exercising the live transport branch.

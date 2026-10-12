@@ -1,0 +1,13 @@
+{
+  "mode": "actual Chrome localhost production preview",
+  "noVoluntaryExclusions": true,
+  "observed": {
+    "elapsedMs": "60000",
+    "entryMs": "139685.39999997616",
+    "finalInstructionFrameMs": "199730.2",
+    "firstInstructionFrameMs": "139712.5",
+    "guidedFrameDurationMs": "60017.70000000001",
+    "phase": "done",
+    "state": "completed"
+  }
+}

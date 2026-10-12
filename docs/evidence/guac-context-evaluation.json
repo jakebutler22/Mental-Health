@@ -1,0 +1,370 @@
+{
+  "scope": "Guac deterministic fixtures/API/database; no actual live network or browser calls",
+  "cases": [
+    {
+      "case": "G01",
+      "action": "Fictional exam tomorrow; my shoulders feel tight and I am tense.",
+      "expected": "breathing; offer; brief reflection/reason",
+      "mode": "mock/TestClient; no network",
+      "observed": {
+        "reflection": "With the upcoming exam, you describe feeling keyed up.",
+        "recommended_skill": "breathing",
+        "reason": "A steady rhythm may suit the keyed-up feeling you described.",
+        "clarification": null,
+        "action": "offer"
+      },
+      "status": "pass"
+    },
+    {
+      "case": "G02",
+      "action": "Fictional roommate disagreement; I keep replaying it and my thoughts are looping.",
+      "expected": "grounding; offer; brief reflection/reason",
+      "mode": "mock/TestClient; no network",
+      "observed": {
+        "reflection": "With the roommate situation, you describe feeling pulled into several thoughts.",
+        "recommended_skill": "grounding",
+        "reason": "Noticing your surroundings may suit the scattered thoughts you described.",
+        "clarification": null,
+        "action": "offer"
+      },
+      "status": "pass"
+    },
+    {
+      "case": "G03",
+      "action": "No breathing. I feel keyed up before a fictional presentation.",
+      "expected": "grounding; offer; brief reflection/reason",
+      "mode": "mock/TestClient; no network",
+      "observed": {
+        "reflection": "With this campus situation, you describe feeling keyed up.",
+        "recommended_skill": "grounding",
+        "reason": "You ruled out the other exercise, so this is an optional alternative.",
+        "clarification": null,
+        "action": "offer"
+      },
+      "status": "pass"
+    },
+    {
+      "case": "G04",
+      "action": "No grounding. I prefer breathing before a fictional exam.",
+      "expected": "breathing; offer; brief reflection/reason",
+      "mode": "mock/TestClient; no network",
+      "observed": {
+        "reflection": "You prefer breathing for the upcoming exam.",
+        "recommended_skill": "breathing",
+        "reason": "You asked for breathing; that choice takes priority.",
+        "clarification": null,
+        "action": "offer"
+      },
+      "status": "pass"
+    },
+    {
+      "case": "G05",
+      "action": "I feel wound up. Actually I feel scattered about the fictional club meeting.",
+      "expected": "grounding; offer; brief reflection/reason",
+      "mode": "mock/TestClient; no network",
+      "observed": {
+        "reflection": "With the social situation, you describe feeling pulled into several thoughts.",
+        "recommended_skill": "grounding",
+        "reason": "Noticing your surroundings may suit the scattered thoughts you described.",
+        "clarification": null,
+        "action": "offer"
+      },
+      "status": "pass"
+    },
+    {
+      "case": "G06",
+      "action": "No breathing. Actually I feel keyed up before a fictional exam.",
+      "expected": "grounding; offer; brief reflection/reason",
+      "mode": "mock/TestClient; no network",
+      "observed": {
+        "reflection": "With the upcoming exam, you describe feeling keyed up.",
+        "recommended_skill": "grounding",
+        "reason": "You ruled out the other exercise, so this is an optional alternative.",
+        "clarification": null,
+        "action": "offer"
+      },
+      "status": "pass"
+    },
+    {
+      "case": "G07",
+      "action": "No breathing. Actually I prefer breathing before a fictional exam.",
+      "expected": "breathing; offer; brief reflection/reason",
+      "mode": "mock/TestClient; no network",
+      "observed": {
+        "reflection": "You prefer breathing for the upcoming exam.",
+        "recommended_skill": "breathing",
+        "reason": "You asked for breathing; that choice takes priority.",
+        "clarification": null,
+        "action": "offer"
+      },
+      "status": "pass"
+    },
+    {
+      "case": "G08",
+      "action": "I prefer grounding before the fictional exam.",
+      "expected": "grounding; offer; brief reflection/reason",
+      "mode": "mock/TestClient; no network",
+      "observed": {
+        "reflection": "You prefer grounding for the upcoming exam.",
+        "recommended_skill": "grounding",
+        "reason": "You asked for grounding; that choice takes priority.",
+        "clarification": null,
+        "action": "offer"
+      },
+      "status": "pass"
+    },
+    {
+      "case": "G09",
+      "action": "Neither, thanks.",
+      "expected": "None; decline; brief reflection/reason",
+      "mode": "mock/TestClient; no network",
+      "observed": {
+        "reflection": "Neither is okay. You can leave things here or choose something later.",
+        "recommended_skill": null,
+        "reason": "Your choice stays yours.",
+        "clarification": null,
+        "action": "decline"
+      },
+      "status": "pass"
+    },
+    {
+      "case": "G10",
+      "action": "Stop.",
+      "expected": "None; decline; brief reflection/reason",
+      "mode": "mock/TestClient; no network",
+      "observed": {
+        "reflection": "Neither is okay. You can leave things here or choose something later.",
+        "recommended_skill": null,
+        "reason": "Your choice stays yours.",
+        "clarification": null,
+        "action": "decline"
+      },
+      "status": "pass"
+    },
+    {
+      "case": "G11",
+      "action": "No breathing and no grounding.",
+      "expected": "None; decline; brief reflection/reason",
+      "mode": "mock/TestClient; no network",
+      "observed": {
+        "reflection": "Neither is okay. You can leave things here or choose something later.",
+        "recommended_skill": null,
+        "reason": "Your choice stays yours.",
+        "clarification": null,
+        "action": "decline"
+      },
+      "status": "pass"
+    },
+    {
+      "case": "G12",
+      "action": "A fictional campus afternoon feels unclear.",
+      "expected": "None; clarify; brief reflection/reason",
+      "mode": "mock/TestClient; no network",
+      "observed": {
+        "reflection": "There may be a few things mixed together around this campus situation.",
+        "recommended_skill": null,
+        "reason": "You can choose either exercise without explaining more.",
+        "clarification": "Would a steady rhythm or noticing your surroundings suit this moment?",
+        "action": "clarify"
+      },
+      "status": "pass"
+    },
+    {
+      "case": "G13",
+      "action": "I feel tense and scattered before the fictional exam.",
+      "expected": "None; clarify; brief reflection/reason",
+      "mode": "mock/TestClient; no network",
+      "observed": {
+        "reflection": "There may be a few things mixed together around the upcoming exam.",
+        "recommended_skill": null,
+        "reason": "You can choose either exercise without explaining more.",
+        "clarification": "Would a steady rhythm or noticing your surroundings suit this moment?",
+        "action": "clarify"
+      },
+      "status": "pass"
+    },
+    {
+      "case": "G14",
+      "action": "I do not feel tense about this fictional situation.",
+      "expected": "None; clarify; brief reflection/reason",
+      "mode": "mock/TestClient; no network",
+      "observed": {
+        "reflection": "There may be a few things mixed together around this campus situation.",
+        "recommended_skill": null,
+        "reason": "You can choose either exercise without explaining more.",
+        "clarification": "Would a steady rhythm or noticing your surroundings suit this moment?",
+        "action": "clarify"
+      },
+      "status": "pass"
+    },
+    {
+      "case": "G15",
+      "action": "I prefer breathing although my fictional roommate situation leaves me scattered.",
+      "expected": "breathing; offer; brief reflection/reason",
+      "mode": "mock/TestClient; no network",
+      "observed": {
+        "reflection": "With the roommate situation, you describe feeling pulled into several thoughts.",
+        "recommended_skill": "breathing",
+        "reason": "You asked for breathing; that choice takes priority.",
+        "clarification": null,
+        "action": "offer"
+      },
+      "status": "pass"
+    },
+    {
+      "case": "G16",
+      "action": "I prefer grounding. Actually I feel tense about the fictional exam.",
+      "expected": "grounding; offer; brief reflection/reason",
+      "mode": "mock/TestClient; no network",
+      "observed": {
+        "reflection": "With the upcoming exam, you describe feeling keyed up.",
+        "recommended_skill": "grounding",
+        "reason": "You asked for grounding; that choice takes priority.",
+        "clarification": null,
+        "action": "offer"
+      },
+      "status": "pass"
+    },
+    {
+      "case": "G24",
+      "action": "I feel tense waiting at the fictional campus bus stop.",
+      "expected": "breathing; offer; brief reflection/reason",
+      "mode": "mock/TestClient; no network",
+      "observed": {
+        "reflection": "With this campus situation, you describe feeling keyed up.",
+        "recommended_skill": "breathing",
+        "reason": "A steady rhythm may suit the keyed-up feeling you described.",
+        "clarification": null,
+        "action": "offer"
+      },
+      "status": "pass"
+    },
+    {
+      "case": "G25",
+      "action": "I'd like grounding before the fictional exam.",
+      "expected": "grounding; offer; brief reflection/reason",
+      "mode": "mock/TestClient; no network",
+      "observed": {
+        "reflection": "You prefer grounding for the upcoming exam.",
+        "recommended_skill": "grounding",
+        "reason": "You asked for grounding; that choice takes priority.",
+        "clarification": null,
+        "action": "offer"
+      },
+      "status": "pass"
+    },
+    {
+      "case": "G26",
+      "action": "I don't want to do breathing; I feel keyed up about the fictional exam.",
+      "expected": "grounding; offer; brief reflection/reason",
+      "mode": "mock/TestClient; no network",
+      "observed": {
+        "reflection": "With the upcoming exam, you describe feeling keyed up.",
+        "recommended_skill": "grounding",
+        "reason": "You ruled out the other exercise, so this is an optional alternative.",
+        "clarification": null,
+        "action": "offer"
+      },
+      "status": "pass"
+    },
+    {
+      "case": "G17",
+      "action": "Second vague input after optional clarification",
+      "expected": "No second clarification; both choices available",
+      "mode": "mock/TestClient; no network",
+      "observed": {
+        "reflection": "There may be a few things mixed together around this campus situation.",
+        "recommended_skill": null,
+        "reason": "You can choose either exercise without explaining more.",
+        "clarification": null,
+        "action": "offer"
+      },
+      "status": "pass"
+    },
+    {
+      "case": "G18",
+      "action": "Short followup on tense prior input",
+      "expected": "Relevant bounded conversational context retained",
+      "mode": "mock/TestClient; no network",
+      "observed": {
+        "reflection": "With this campus situation, you describe feeling keyed up.",
+        "recommended_skill": "breathing",
+        "reason": "A steady rhythm may suit the keyed-up feeling you described.",
+        "clarification": null,
+        "action": "offer"
+      },
+      "status": "pass"
+    },
+    {
+      "case": "G19",
+      "action": "Preference-only input; no stated feeling",
+      "expected": "Reflect preference without inventing scattered feelings",
+      "mode": "mock/TestClient; no network",
+      "observed": {
+        "reflection": "You prefer grounding for the upcoming exam.",
+        "recommended_skill": "grounding",
+        "reason": "You asked for grounding; that choice takes priority.",
+        "clarification": null,
+        "action": "offer"
+      },
+      "status": "pass"
+    },
+    {
+      "case": "G20",
+      "action": "Unsupported skill, promise and breath hold in structured model output",
+      "expected": "Reject unsafe/unsupported output before UI",
+      "mode": "mock/TestClient; no network",
+      "observed": {
+        "rejected_count": 3,
+        "error_codes": [
+          "instruction_conflict",
+          "instruction_conflict",
+          "instruction_conflict"
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "case": "G21",
+      "action": "Vague turn/restart/vague turn/correction/choose alternative/replay",
+      "expected": "At most one persisted optional question; recommendation distinct from chosen skill",
+      "mode": "mock/TestClient; no network",
+      "observed": {
+        "clarification_after_restart": null,
+        "recommended_skill": "grounding",
+        "chosen_skill": "breathing",
+        "duplicate_session_count": 1,
+        "foreign_key_violations": 0
+      },
+      "status": "pass"
+    },
+    {
+      "case": "G22",
+      "action": "Injected provider timeout then direct exercise; invalid failed-result reference",
+      "expected": "Direct skill independent; failed recommendation cannot be snapshotted",
+      "mode": "mock/TestClient; no network",
+      "observed": {
+        "chat_status": "failed",
+        "code": "provider_timeout",
+        "direct_session_status": 201,
+        "failed_recommendation_link_status": 422
+      },
+      "status": "pass"
+    },
+    {
+      "case": "G23",
+      "action": "Additive migration from fictional pre-Guac schema",
+      "expected": "Preserve legacy records and explicit red; new columns nullable",
+      "mode": "mock/TestClient; no network",
+      "observed": {
+        "legacy_completed_record_preserved": true,
+        "new_recommendation_reference": null,
+        "explicit_color_preserved": "red",
+        "foreign_key_violations": 0
+      },
+      "status": "pass"
+    }
+  ],
+  "passed": 26,
+  "failed": 0
+}

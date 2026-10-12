@@ -22,7 +22,7 @@ def create_app(database_path=None, settings=None, model_controller=None):
     async def lifespan(app):
         initialize_database(path)
         yield
-    app = FastAPI(title='Campus Pause localhost coursework', lifespan=lifespan)
+    app = FastAPI(title='Guac localhost coursework', lifespan=lifespan)
     app.state.database_path = path
     app.state.settings = settings
     app.state.model_controller = model_controller or ModelController(settings)
@@ -55,7 +55,7 @@ def create_app(database_path=None, settings=None, model_controller=None):
         with connect_database(path) as db:
             value=row_dict(db.execute('SELECT * FROM conversations WHERE id=?',(conversation_id,)).fetchone())
             if value is None: raise HTTPException(404,'conversation_not_found')
-            value['messages']=[row_dict(r) for r in db.execute('SELECT messages.*, model_requests.mode, model_requests.sanitized_error_code FROM messages JOIN model_requests USING(request_id) WHERE messages.conversation_id=? ORDER BY messages.id',(conversation_id,))]
+            value['messages']=[row_dict(r) for r in db.execute('SELECT messages.*, model_requests.mode, model_requests.sanitized_error_code, model_requests.result_json FROM messages JOIN model_requests USING(request_id) WHERE messages.conversation_id=? ORDER BY messages.id',(conversation_id,))]
             value['sessions']=[row_dict(r) for r in db.execute('SELECT * FROM sessions WHERE conversation_id=? ORDER BY started_at',(conversation_id,))]
             return value
 
@@ -64,11 +64,18 @@ def create_app(database_path=None, settings=None, model_controller=None):
         with connect_database(path) as db:
             existing=row_dict(db.execute('SELECT * FROM sessions WHERE request_id=?',(data.request_id,)).fetchone())
             if existing:
-                if existing['skill']!=data.skill or existing['conversation_id']!=data.conversation_id: raise HTTPException(409,'request_id_conflict')
+                if existing['skill']!=data.skill or existing['conversation_id']!=data.conversation_id or existing['recommendation_request_id']!=data.recommendation_request_id: raise HTTPException(409,'request_id_conflict')
                 return existing
             if data.conversation_id and not db.execute('SELECT 1 FROM conversations WHERE id=?',(data.conversation_id,)).fetchone(): raise HTTPException(404,'conversation_not_found')
+            recommendation=None
+            if data.recommendation_request_id:
+                request=db.execute('SELECT * FROM model_requests WHERE request_id=?',(data.recommendation_request_id,)).fetchone()
+                if not request or request['conversation_id']!=data.conversation_id or request['status']!='succeeded' or not request['result_json']:
+                    raise HTTPException(422,'invalid_recommendation_reference')
+                recommendation=json.loads(request['result_json'])
             sid=str(uuid4())
-            db.execute("INSERT INTO sessions VALUES(?,?,?,?,'active',?,NULL,0,0,0,'[]',0)",(sid,data.request_id,data.conversation_id,data.skill,now()))
+            db.execute("INSERT INTO sessions(id,request_id,conversation_id,skill,state,started_at,active_elapsed_ms,step,cycles,skipped_steps,version,recommendation_request_id,recommended_skill,recommendation_reason) VALUES(?,?,?,?,'active',?,0,0,0,'[]',0,?,?,?)",(sid,data.request_id,data.conversation_id,data.skill,now(),data.recommendation_request_id,(recommendation or {}).get('recommended_skill'),(recommendation or {}).get('reason')))
+
             return row_dict(db.execute('SELECT * FROM sessions WHERE id=?',(sid,)).fetchone())
 
     @app.get('/api/sessions')

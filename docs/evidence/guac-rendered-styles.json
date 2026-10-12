@@ -1,0 +1,90 @@
+{
+  "styles": [
+    {
+      "background": "rgb(250, 248, 239)",
+      "color": "rgb(82, 99, 76)",
+      "fontSize": "14px",
+      "height": 44.796875,
+      "label": "Tell Guac what\u2019s on your mind. Or skip the chat and find your own mome",
+      "width": 350,
+      "contrast_ratio": 6.08
+    },
+    {
+      "background": "rgb(250, 248, 239)",
+      "color": "rgb(36, 61, 37)",
+      "fontSize": "15px",
+      "height": 85,
+      "label": "",
+      "width": 308,
+      "contrast_ratio": 11.16
+    },
+    {
+      "background": "rgb(77, 113, 55)",
+      "color": "rgb(250, 248, 239)",
+      "fontSize": "12px",
+      "height": 44,
+      "label": "Send \u2192",
+      "width": 77.375,
+      "contrast_ratio": 5.29
+    },
+    {
+      "background": "rgb(220, 232, 173)",
+      "color": "rgb(36, 61, 37)",
+      "fontSize": "16px",
+      "height": 205.828125,
+      "label": "\u25cc01 / Find a rhythmPaced breathingFour seconds in. Six seconds out.A s",
+      "width": 350,
+      "contrast_ratio": 9.15
+    },
+    {
+      "background": "rgb(220, 232, 173)",
+      "color": "rgb(36, 61, 37)",
+      "fontSize": "11px",
+      "height": 15,
+      "label": "01 / Find a rhythm",
+      "width": 200,
+      "contrast_ratio": 9.15
+    },
+    {
+      "background": "rgb(235, 238, 219)",
+      "color": "rgb(36, 61, 37)",
+      "fontSize": "16px",
+      "height": 220.828125,
+      "label": "\u273302 / Notice this momentSensory groundingOne sense at a time.A little ",
+      "width": 350,
+      "contrast_ratio": 10.05
+    },
+    {
+      "background": "rgb(235, 238, 219)",
+      "color": "rgb(36, 61, 37)",
+      "fontSize": "11px",
+      "height": 30,
+      "label": "02 / Notice this moment",
+      "width": 200,
+      "contrast_ratio": 10.05
+    },
+    {
+      "background": "rgb(250, 248, 239)",
+      "color": "rgb(82, 99, 76)",
+      "fontSize": "11px",
+      "height": 35.1875,
+      "label": "Fictional coursework prototype \u00b7 Not monitored",
+      "width": 145,
+      "contrast_ratio": 6.08
+    },
+    {
+      "background": "rgb(36, 61, 37)",
+      "color": "rgb(250, 248, 239)",
+      "fontSize": "12px",
+      "height": 50.5,
+      "label": "\u2661 Support resources \u2197",
+      "width": 173.1953125,
+      "contrast_ratio": 11.16
+    }
+  ],
+  "viewport": {
+    "height": 844,
+    "scrollWidth": 390,
+    "width": 390
+  }
+}

@@ -6,7 +6,7 @@ from app.model_client import ModelController,ModelFailure,bounded_context,valida
 
 LIVE=Settings(mode='live',api_key='fictional-secret',model='nvidia/nemotron-test:free')
 
-def reply(content='{"category":"exam","suggested_skill":"breathing"}',model='nvidia/nemotron-test',status=200):
+def reply(content='{"reflection":"The fictional exam feels tense.","recommended_skill":"breathing","reason":"A steady rhythm may suit this moment.","clarification":null,"action":"offer"}',model='nvidia/nemotron-test',status=200):
     return httpx.Response(status,json={'model':model,'choices':[{'message':{'content':content}}]})
 
 def test_known_input_and_bounded_context():
@@ -17,7 +17,7 @@ def test_known_input_and_bounded_context():
         return reply()
     controller=ModelController(LIVE,httpx.MockTransport(handler))
     result=controller.respond('Fictional exam tomorrow',[{'role':'user','text':'x'*800}]*10,[{'skill':'grounding','state':'completed'}])
-    assert result.mode=='live' and result.category=='exam' and result.returned_model_id=='nvidia/nemotron-test'
+    assert result.mode=='live' and result.category=='contextual' and result.returned_model_id=='nvidia/nemotron-test'
     assert controller.live_verified and controller.attempts==1
     messages=captured[0]['messages']
     assert len(messages)==8 and sum(len(m['content']) for m in messages[1:-1])==3000
@@ -45,7 +45,7 @@ def test_cap_counts_failed_attempts_and_returns_mock():
     with pytest.raises(ModelFailure):controller.respond('Fictional exam')
     result=controller.respond('Fictional roommate')
     assert len(calls)==1 and controller.attempts==1 and result.mode=='mock' and result.limit_reached
-    assert result.suggested_skill=='grounding'
+    assert result.suggested_skill is None
 
 def test_mock_missing_and_input():
     assert ModelController(Settings()).respond('Fictional exam').mode=='mock'
