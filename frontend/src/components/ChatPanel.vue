@@ -98,7 +98,7 @@ onUnmounted(() => controller.invalidate());
 </script>
 
 <template>
-  <section class="chat-card card" aria-label="Optional fictional conversation">
+  <section class="chat-card card" aria-label="Optional conversation">
     <div class="chat-top">
       <div class="chat-identity"><GuacMark /><div><strong>Guac</strong><span class="fine">A moment, your way.</span></div></div>
       <button class="text-button" @click="reset">New conversation</button>
@@ -106,7 +106,7 @@ onUnmounted(() => controller.invalidate());
     <p v-if="!messages.length" class="chat-welcome">What’s taking up space today?</p>
     <div class="chat-messages" aria-live="polite">
       <article v-for="message in messages" :key="message.id" :class="message.role">
-        <span class="eyebrow">{{ message.role === 'user' ? 'Fictional student' : 'Guac' }} · {{ message.mode }} · {{ message.status }}</span>
+        <span class="eyebrow">{{ message.role === 'user' ? 'You' : 'Guac' }} · {{ message.mode }} · {{ message.status }}</span>
         <p>{{ message.text }}</p>
       </article>
     </div>
@@ -114,8 +114,8 @@ onUnmounted(() => controller.invalidate());
     <div v-if="declined" class="decline-note" role="status"><p>Neither is okay. We can leave it here.</p></div>
     <p v-if="offer" class="support-offer">Support is available independently of this chat. <button class="text-button" @click="emit('support')">Open support resources</button></p>
     <form @submit.prevent="send()">
-      <label class="sr-only" for="chat-input">Optional fictional message</label>
-      <textarea id="chat-input" v-model="input" maxlength="500" rows="2" placeholder="For example: I feel wound up about tomorrow’s exam…" :disabled="loading" />
+      <label class="sr-only" for="chat-input">Optional message</label>
+      <textarea id="chat-input" v-model="input" maxlength="500" rows="2" placeholder="For example: I feel wound up about tomorrow’s work presentation…" :disabled="loading" />
       <div class="chat-actions">
         <span class="fine">{{ input.length }} / 500 · optional</span>
         <button :class="[hasPrimaryRecommendation ? 'secondary' : 'primary', 'small']" :disabled="loading || !input.trim()" type="submit">{{ loading ? 'Thinking…' : 'Send →' }}</button>
@@ -123,6 +123,6 @@ onUnmounted(() => controller.invalidate());
     </form>
     <p v-if="loading" role="status" class="fine">Waiting for chat. You can begin either exercise now.</p>
     <p v-if="error" class="error" role="alert">{{ error }} <button v-if="controller.pending" class="text-button" :disabled="loading" @click="send(retrySame)">{{ retrySame ? 'Check same request' : 'Send again' }}</button></p>
-    <p class="chat-status fine">{{ status }} · fictional scenarios only</p>
+    <p class="chat-status fine">{{ status }} · optional conversation</p>
   </section>
 </template>

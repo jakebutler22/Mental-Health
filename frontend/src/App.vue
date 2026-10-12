@@ -312,7 +312,7 @@ onUnmounted(() => {
     </main>
 
     <footer class="site-footer">
-      <p>Fictional coursework prototype <span aria-hidden="true">·</span> Not monitored</p>
+      <p>Local prototype <span aria-hidden="true">·</span> Not monitored</p>
       <button class="support-button" @click="openSupport"><span aria-hidden="true">♡</span> Support resources <span aria-hidden="true">↗</span></button>
     </footer>
     <SupportPanel v-if="support" @close="support = false" />

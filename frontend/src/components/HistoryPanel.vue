@@ -77,7 +77,7 @@ onMounted(load);
   <section class="card history">
     <span class="eyebrow">Your local history</span>
     <h2>Little moments, kept.</h2>
-    <p class="fine">One local history for fictional coursework. Recommendations and choices describe activity, not clinical progress or a profile.</p>
+    <p class="fine">Your local history. Recommendations and choices describe activity, not clinical progress or a profile.</p>
     <p v-if="loading" role="status">Loading saved history…</p>
     <p v-if="error" class="error" role="alert">{{ error }} <button class="text-button" @click="load">Retry</button></p>
     <h3>Exercises</h3>
@@ -100,7 +100,7 @@ onMounted(load);
       <h3>Saved conversation</h3>
       <p v-if="!detail.messages.length" class="fine">No messages.</p>
       <article v-for="message in detail.messages" :key="message.id">
-        <span class="eyebrow">{{ message.role === 'assistant' ? 'Guac' : 'Fictional student' }} · {{ message.status }} · {{ message.mode || '' }}</span>
+        <span class="eyebrow">{{ message.role === 'assistant' ? 'Guac' : 'You' }} · {{ message.status }} · {{ message.mode || '' }}</span>
         <p>{{ message.text }}</p>
         <div v-if="message.role === 'assistant' && message.recommendation" class="history-recommendation">
           <p class="fine">Recommendation: {{ name(message.recommendation.recommended_skill ?? message.recommendation.suggested_skill) }}<br>{{ message.recommendation.reason || 'Reason not stored in the earlier version.' }}</p>

@@ -1,3 +1,5 @@
+> HISTORICAL / PRESERVED WORK. Current scope is [Part3.1 only](../prompts/12-part31-scope-correction.md). Later milestones remain pending; this record does not authorize continuation. Earlier audience framing and observations describe earlier source, not the current everyday design.
+
 # Guac exact-source clean checkout
 
 Verified source **7c7742b1da5be66ea6a3bae9cb5ab4d7babcb1a2**, fetched from the real public remote and checked out detached in `/Users/jakebutler/Documents/ChatGPT/Mental Health/.verification/guac`. [Machine record](evidence/guac-clean-checkout.json). Parent Codex agent performed this run; another person's run remains pending.

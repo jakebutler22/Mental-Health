@@ -22,7 +22,7 @@ def create_app(database_path=None, settings=None, model_controller=None):
     async def lifespan(app):
         initialize_database(path)
         yield
-    app = FastAPI(title='Guac localhost coursework', lifespan=lifespan)
+    app = FastAPI(title='Guac localhost prototype', lifespan=lifespan)
     app.state.database_path = path
     app.state.settings = settings
     app.state.model_controller = model_controller or ModelController(settings)
@@ -40,7 +40,7 @@ def create_app(database_path=None, settings=None, model_controller=None):
 
     @app.post('/api/conversations', status_code=201)
     def create_conversation():
-        value = {'id':str(uuid4()),'created_at':now(),'updated_at':now(),'fictional_title':'Fictional campus conversation'}
+        value = {'id':str(uuid4()),'created_at':now(),'updated_at':now(),'fictional_title':'Everyday conversation'}
         with connect_database(path) as db:
             db.execute('INSERT INTO conversations VALUES(:id,:created_at,:updated_at,:fictional_title)', value)
         return value

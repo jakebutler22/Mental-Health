@@ -1,3 +1,5 @@
+> HISTORICAL / PRESERVED WORK. Current scope is [Part3.1 only](../prompts/12-part31-scope-correction.md). Later milestones remain pending; this record does not authorize continuation. Earlier audience framing and observations describe earlier source, not the current everyday design.
+
 # Guac frontend revision — October 12, 2026
 
 CHECK: Read prompts/11-guac-product-direction.md completely, current AGENTS/README/handoff/design, inspect actual source and Git changes. Prior application remains in this same root, with separate frontend/backend, unchanged exercise clock, session queues and confirmed historical evidence. Revision owns frontend/ only plus this evidence file; browser/Git checkpoints parent-owned. No dependencies added.

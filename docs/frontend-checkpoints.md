@@ -1,3 +1,5 @@
+> HISTORICAL EVIDENCE. Current [Part3.1-only scope](../prompts/12-part31-scope-correction.md) supersedes earlier audience and automatic continuation. Preserve these observations tied to earlier source; do not expand later stages.
+
 # Frontend checkpoints — October 12, 2026
 
 CHECK: Read the complete autonomous runbook, README, handoff, assignment digest, class rules, AGENTS, design pipeline and static mockup. Frontend was an empty structural placeholder. Actual environment Node v24.12.0 / npm11.6.2. Reuse selected only request generation/abort/error patterns; no Expedia files copied or changed.

@@ -1,3 +1,5 @@
+> HISTORICAL EVIDENCE. Current [Part3.1-only scope](../prompts/12-part31-scope-correction.md) supersedes earlier audience and automatic continuation. Preserve these observations tied to earlier source; do not expand later stages.
+
 # Agent review checkpoints
 
 ## Design and publication boundary — October 12, 2026

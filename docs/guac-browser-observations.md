@@ -1,3 +1,5 @@
+> HISTORICAL / PRESERVED WORK. Current scope is [Part3.1 only](../prompts/12-part31-scope-correction.md). Later milestones remain pending; this record does not authorize continuation. Earlier audience framing and observations describe earlier source, not the current everyday design.
+
 # Guac actual browser observations
 
 October12,2026. Primary Codex agent operated real Chrome localhost5174, FastAPI8001 and this project's own fictional SQLite. Production preview was frozen after frontend owner20tests/build; no HMR altered these runs. Backend54tests and independent26context/20general cases pass after review. Browser uses labeled mocks; no live success is claimed.
