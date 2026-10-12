@@ -1,3 +1,13 @@
+# AI use — current Part 3.1 scope
+
+October12,2026: OpenAI Codex desktop assistant inspected current Git/instructions/design/handoff, reconciled the latest scope, prepared the everyday Guac design/flow/static mockup and source/report evidence, reviewed artifacts and published the design checkpoint. Exact assistant model identifier is unavailable; do not infer it. Tools used for this revision are recorded in [Part3.1 verification](docs/part31-verification.md). No new live provider call, dependency, generated bitmap, database work or later feature was needed. No subagent work was requested for this scope correction.
+
+The mark and balloon asset were preserved from earlier work: original SVG avocado, original image-generated photographic balloon; the exact earlier image model remains unknown. Reusing them in a static mockup does not prove timed animation. Proposed model behavior is designed, not a successful live result. Student review/submission is separate and unclaimed.
+
+Earlier broader-scope execution is preserved below as historical disclosure; it is not an instruction to resume Parts3.2/3.3. Current authority [scope correction](prompts/12-part31-scope-correction.md) requires stopping after the verified Part3.1 checkpoint.
+
+## Historical tool use and implementation
+
 # AI use — actual execution
 
 October12,2026: OpenAI Codex desktop assistant used for source audit, requirements interpretation, implementation, documentation, project-local commands/tests, GitHub creation/public source publication, and actual Chrome browser checks. Exact assistant model identifier/version is unavailable: **unknown**. Do not infer it from a product description. Three Codex subagents handled backend, frontend and independent review/evaluation with separate file ownership; their exact model identifiers are also unavailable. Student review/testing/narration is not implied by agent work.

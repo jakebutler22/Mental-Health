@@ -26,7 +26,7 @@ D4, 31 mentions: Safety access must stay persistently visible, including inside 
 D5, 49 mentions: Personalization should use prior actions without burdensome configuration.
 D6, 97 mentions: Use low-stimulus, nonjudgmental presentation. Clinical phrasing could feel diagnostic, excessive cheerfulness could feel condescending, and saturated color or motion could add demands.
 
-Explain design choices using R1–R4 and D1–D6, including alternatives and tradeoffs. A user-selected simpler view is our possible response to D1, not a finding that the study established reliable distress detection. Our college-student audience is a project design choice, not a population for which this prototype has established clinical effectiveness.
+Explain design choices using R1–R4 and D1–D6, including alternatives and tradeoffs. A user-selected simpler view is our possible response to D1, not a finding that the study established reliable distress detection. The general everyday audience is a project design choice; the supplied study does not establish effectiveness for that audience.
 
 Skill definitions:
 - Paced breathing: inhale for a count of four and exhale for a count of six, repeating for roughly 60–90 seconds.
@@ -64,28 +64,6 @@ Submission:
 - Do not invent citations, commits, recordings, provider verification, or observed test results.
 
 
-## Agreed direction
+## Current selected direction
 
-Use Campus Pause as a provisional app title; keep the actual folder named Mental Health.
-- Fictional college-student situations.
-- Warm, minimal cream-and-sage surroundings.
-- Open with a short chat, while offering direct access to breathing or grounding without required disclosure or a model wait.
-- Finish both breathing and grounding by the final milestone.
-- Reuse suitable existing class code and model setup only after verification.
-
-The breathing exercise's central visual is a hyperrealistic latex balloon:
-- Red by default, with optional user-selected color that preserves realistic highlights and shading.
-- Convincing volume, latex material, neck or knot, and smooth shape changes.
-- Smooth inflation over four seconds of inhaling and deflation over six seconds of exhaling.
-- Six cycles provide 60 seconds of animation. Measure the entire guided sequence separately against the 90-second requirement.
-- Keep the balloon visible at its smallest size; avoid abrupt resets.
-- Pause/resume freezes and resumes both the phase clock and balloon state together.
-- Provide clear inhale/exhale labels and an equally timed reduced-motion alternative.
-- Remember an explicitly chosen color without requiring configuration before exercise.
-- Treat size as a pacing cue, not a measurement of actual lung volume. Do not add breath holds or forceful breathing instructions.
-
-Evaluate feasible rendering approaches against visual fidelity, color changes, timing, performance, and dependency cost. A high-resolution asset with controlled deformation is a candidate, not verified proof of hyperrealism. Show the proposed low, middle, and full inflation states. Do not lock in an approach or claim the final appearance without a visual check.
-
-## Current product revision
-
-The original brief above is preserved as assignment provenance. [User product direction](../prompts/11-guac-product-direction.md) supersedes the provisional name, cream/sage-only palette and red default: Guac, avocado tokens, green default with saved color preserved, contextual structured reflection/recommendation/reason and separately saved actual choice. It does not alter the required skills, timing, stack or milestones.
+The latest user scope is [Part 3.1 only](../prompts/12-part31-scope-correction.md). Guac is intended for general everyday use. Fictional busy days, work presentations and difficult conversations are review examples, not a restricted product audience. Avocado identity, contextual optional chat, direct breathing/grounding, green realistic latex balloon (red optional),4-second inhale/6-second exhale/six cycles and equally timed reduced motion are retained design choices. Current [design](design-pipeline.md) distinguishes proposals from preserved implementation. Earlier education-specific direction is historical and superseded. No later milestone is authorized until requested.

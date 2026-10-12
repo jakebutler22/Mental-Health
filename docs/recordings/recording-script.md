@@ -1,3 +1,5 @@
+> HISTORICAL / PRESERVED WORK. Current scope is [Part3.1 only](../../prompts/12-part31-scope-correction.md). Later milestones remain pending; this record does not authorize continuation. Earlier audience framing and observations describe earlier source, not the current everyday design.
+
 # Recording script — pending human capture
 
 No video recording exists. Browser capability inventory exposes viewport/visibility and still screenshots, not video. Native Screenshot and QuickTime Player applications exist but CUA could not acquire their recording windows/controls (timeouts); attempted key aliases were unsupported. No private desktop capture or invented recording was produced. Use a local recorder that you control and frame only the application/project evidence; do not display credentials or unrelated tabs. Store reviewed files here as demo.mp4 and process.mp4 (or one marked recording) and add real repository links afterward. Student narration/review has not occurred.

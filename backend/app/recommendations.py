@@ -58,10 +58,10 @@ def mock_recommendation(text,history=(),clarification_used=False):
     # Negated feelings don't contribute; correction segment has already discarded old feelings.
     if re.search(r"\b(?:not|don't feel|do not feel)\s+(?:really\s+)?(?:tense|wound up|keyed up|jittery)\b",current): tense=False
     if re.search(r"\b(?:not|don't feel|do not feel)\s+(?:really\s+)?(?:scattered|distracted)\b",current): scattered=False
-    context='this campus situation'
+    context='this everyday situation'
     if re.search(r'\b(?:exam|quiz|test)\b',current): context='the upcoming exam'
     elif re.search(r'\b(?:roommate|dorm)\b',current): context='the roommate situation'
-    elif re.search(r'\b(?:deadline|assignment|homework)\b',current): context='the assignments on your plate'
+    elif re.search(r'\b(?:deadline|assignment|homework)\b',current): context='the tasks on your plate'
     elif re.search(r'\b(?:friend|club|social)\b',current): context='the social situation'
     if preference:
         skill=preference

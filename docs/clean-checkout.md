@@ -1,3 +1,5 @@
+> HISTORICAL EVIDENCE. Current [Part3.1-only scope](../prompts/12-part31-scope-correction.md) supersedes earlier audience and automatic continuation. Preserve these observations tied to earlier source; do not expand later stages.
+
 # Exact-source clean checkout verification — October 12, 2026
 
 Verified source commit: **8497873908b4318be2a1b8112c0401f466cd695b** ([source](https://github.com/jakebutler22/Mental-Health/tree/8497873908b4318be2a1b8112c0401f466cd695b)). This is the main merge checkpoint, not a guessed hash or an uncommitted working tree. Clone directory: `/Users/jakebutler/Documents/ChatGPT/Mental Health/.verification/checkout`, ignored by outer project.

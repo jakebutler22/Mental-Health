@@ -1,3 +1,5 @@
+> HISTORICAL / PRESERVED WORK. Current scope is [Part3.1 only](../prompts/12-part31-scope-correction.md). Later milestones remain pending; this record does not authorize continuation. Earlier audience framing and observations describe earlier source, not the current everyday design.
+
 # Guac fictional evaluation
 
 Current revision: [product direction](../prompts/11-guac-product-direction.md). [Historical evaluation](evaluation.md) and original evidence remain separate. All inputs are fictional; mocked interpretation and transport fixtures do not establish live-model success.

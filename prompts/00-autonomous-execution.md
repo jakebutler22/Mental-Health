@@ -1,3 +1,5 @@
+> HISTORICAL INSTRUCTION — superseded by [Part 3.1-only scope](12-part31-scope-correction.md). Preserve as evidence; do not execute later phases or automatic continuation.
+
 ASSIGNMENT 3: MENTAL HEALTH SKILLS APPLICATION
 Autonomous execution instructions for the existing Codex chat
 Updated October 12, 2026 after the user authorized full execution and public GitHub publication

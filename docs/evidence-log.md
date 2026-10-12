@@ -1,3 +1,13 @@
+# Evidence log — current Part 3.1 scope
+
+Current revision: [scope correction](../prompts/12-part31-scope-correction.md). Clean main304102c inspection before changes. Preserved prior design/mockup/README/report as archives and existing code/history; current general everyday design replaces audience framing. Old all-phase prompts are marked superseded. No later feature work.
+
+[Design](design-pipeline.md), [static mockup](screen-mockup.html), [flow](design-flow.svg), [verification](part31-verification.md) connect source requirements to choices. Real revisions: diagram header overflow fixed after rendered review; direct path moved around failure annotation; stale provider-header test expected coursework after copy correction, so expectation updated and rerun54/54passed. Frontend20tests/build pass. Desktop/mobile static captures establish appearance only; no model/timer/database demonstration performed. Existing original balloon/mark reused without new dependency or image generation.
+
+Following historical log records earlier source and broader scope; it does not authorize continuation. New Part3.1 design SHA and public report links are recorded after the checkpoint. Stop after verification.
+
+## Historical execution evidence
+
 # Curated evidence — October 12, 2026
 
 E1 CHECK: pwd, ls, git status, git ls-files and git remote checks confirmed new root, only .git initially, unborn main, no tracked changes/remotes. No existing project README/AGENTS/handoff. Initial absent screenshots/rules/path blocked source-backed conclusions; prompt 02 supplied summary and candidate path, so design proceeded without inventing screenshot access.

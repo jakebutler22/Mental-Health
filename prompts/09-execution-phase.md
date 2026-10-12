@@ -1,3 +1,5 @@
+> HISTORICAL INSTRUCTION — superseded by [Part 3.1-only scope](12-part31-scope-correction.md). Preserve as evidence; do not execute later phases or automatic continuation.
+
 PHASE 9: RUN THE REQUIRED EVALUATION
 ======================================================================
 

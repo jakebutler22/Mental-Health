@@ -1,77 +1,28 @@
-# Guac
+# Guac — Part 3.1 Research and Design
 
-Guac is an individual Assignment 3 localhost coursework prototype for **fictional college-student scenarios**. Vue presents a short optional conversation, paced breathing and sensory grounding. FastAPI owns validated APIs and SQLite stores conversations, requests, exercise sessions and preferences. It does not diagnose, provide therapy, imply monitoring, or establish clinical effectiveness. Do not deploy it as mental health support.
+Guac is designed for general everyday use: a short optional conversation and direct access to paced breathing or sensory grounding. Review examples are fictional busy days, work presentations and difficult conversations. The current deliverable is **Part 3.1 only**. Parts 3.2 and 3.3 are pending until requested; earlier autonomous continuation instructions are superseded.
 
-The application is implemented. Mock-backed tests and evidence are in [Guac evaluation](docs/guac-evaluation.md); successful live model verification and human review remain separate requirements. Milestone reports: [3.1](submissions/3.1/report.md), [3.2](submissions/3.2/report.md), [3.3](submissions/3.3/report.md). Public source: [Mental-Health](https://github.com/jakebutler22/Mental-Health). Publishing source does not deploy the application.
+Start with the [design specification](docs/design-pipeline.md), [reviewable mockup](docs/screen-mockup.html), [flow diagram](docs/design-flow.svg), [design verification](docs/part31-verification.md) and [Part 3.1 report](submissions/3.1/report.md). Public repository: [Mental-Health](https://github.com/jakebutler22/Mental-Health). Source publication does not deploy Guac or submit coursework.
 
-## Run locally
+## Review the artifacts
 
-Verified development runtime: Python **3.14.7**, Node **24.12.0**, npm **11.6.2**. A different runtime has not been independently verified. Use two terminals from the repository root; quote paths containing spaces.
+GitHub renders the SVG flow diagram and PNG design captures directly. Download the repository and open `docs/screen-mockup.html` in a normal browser for the static desktop/mobile design. Its labels represent proposed states; it does not call a model, start timed exercises or save data. The relative balloon image uses the preserved original local asset.
+
+Optional local static preview, requiring only Python's standard library:
 
 ```bash
 cd "/Users/jakebutler/Documents/ChatGPT/Mental Health"
-python3 -m venv backend/.venv
-backend/.venv/bin/python -m pip install -r backend/requirements.txt
-cp backend/.env.example backend/.env
-backend/.venv/bin/python -m uvicorn app.main:app --app-dir backend --host 127.0.0.1 --port 8001
+python3 -m http.server 5175 --bind 127.0.0.1
 ```
 
-For a clone in another folder, replace the `cd` path with that checkout. First backend startup creates its own ignored `backend/data/campus-pause.sqlite3`; no prior database, credentials or seed files are needed. Later starts preserve history/preferences and mark unfinished sessions/requests interrupted.
+Open `http://127.0.0.1:5175/docs/screen-mockup.html`. Stop the preview with Ctrl-C. No Vue/FastAPI install, database or model credential is needed to review Part 3.1.
 
-Second terminal, same repository root:
+## Design boundaries and preserved work
 
-```bash
-npm ci --prefix frontend
-npm --prefix frontend run dev
-```
+Planned stack: Vue, FastAPI, SQLite and localhost. The model proposes one allowed skill with a short reflection/reason; deliberate user selection starts it. Fixed steps, timing, pause/stop and persistent support belong to the application. No diagnoses, clinical scores, fix promises or monitoring. Intended everyday use is a product direction, not evidence of clinical effectiveness or production readiness.
 
-Open **http://127.0.0.1:5174/**. Vite proxies `/api` to **http://127.0.0.1:8001**; ports are strict to avoid silently testing another app. The earlier travel project uses 8000/5173 and is independently runnable. No runtime imports, symlinks or dependencies on that project exist. API documentation: http://127.0.0.1:8001/docs. Health: `/api/health` returns status/configured booleans, mode and attempted-call count, never secret values. If direct API browser navigation is blocked, inspect health through an HTTP client; this is distinct from UI testing.
+Existing `frontend/`, `backend/`, tests and later reports were created under the earlier broader scope and remain preserved. This revision changes audience copy only in that code; it does not expand functionality. Historical verification applies to the exact earlier source identified in its evidence, not automatically to this revision. [Implementation README archive](docs/implementation-readme-archive.md) retains earlier run instructions; [status distinction](docs/part31-verification.md) separates proposed design, preserved code and current checks. Do not automatically run later evaluations or complete later milestones.
 
-## Model configuration
+Current authority: [scope correction](prompts/12-part31-scope-correction.md), [AGENTS](AGENTS.md), [handoff](handoffs/current.md). Assignment provenance and R/D findings: [source summary](docs/assignment-source.md). AI tools and roles: [AI use](AI-USE.md). Curated evidence: [log](docs/evidence-log.md).
 
-Default `MODEL_MODE=mock` needs no credential; replies are explicitly labeled simulated. For live verification set only in ignored **backend/.env** (or the backend process environment):
-
-```dotenv
-MODEL_MODE=live
-OPENROUTER_API_KEY=<enter your valid key locally>
-OPENROUTER_MODEL=nvidia/nemotron-3.5-lightning:free
-LIVE_CALL_LIMIT=50
-MOCK_BEHAVIOR=success
-```
-
-Never place keys in frontend configuration, a `VITE_` variable, Git, prompts or recordings. Restart the backend after changing configuration. Process settings take precedence over `.env`. [Official catalog check](docs/evidence/guac-provider-catalog.json) confirms the prior model's zero prompt/completion price on October 12, 2026; verify availability before a later live run. No paid/model fallback. Missing configuration is labeled unavailable; a configured key is not evidence of provider success. The prior authorized key returned HTTP401 in this run; see [live evidence](docs/evidence/live-controller.json).
-
-One small model request returns a short contextual reflection, recommended skill, visible reason and at most one optional clarification per conversation. Application validation permits only breathing, grounding or no recommendation; current preferences, negation, corrections and requests to stop override inference. The mock is a labeled deterministic approximation, not evidence of live interpretation. App controllers own all exercise instructions. Validation rejects known diagnoses, promises and instruction conflicts, but does not prove every possible prose response safe. Last six messages (at most3000characters), current input(max500), and last three linked session summaries provide context. One provider attempt per explicit request, finite20second transport timeout. The host cap counts attempted live calls including failures; after at most50 it switches to clearly labeled mocks. This cap is per backend process/session; restart starts a new host session. Peers use mock mode by default. No provider retries occur silently.
-
-Host-only mock behaviors `success`, `timeout`, `empty`, `malformed`, `conflict`, `failure` permit repeatable failure demonstrations. Set `MOCK_BEHAVIOR=timeout` with mock mode and restart for the failure recording, then restore success.
-
-## Use and data rules
-
-Either exercise starts directly without typing or waiting for a model. Breathing is six cycles of4seconds in/6seconds out, no holds; avocado-green latex balloon is a pacing cue; red remains optional. Color is chosen outside exercise and remembered explicitly. Reduced motion keeps the image still with identical phase timing. Grounding follows5seen/4felt/3heard/2smelled/1tasted, one sense per screen. Private identification needs no text; optional notes remain local to a step and never reach database/model. At intended12seconds per sense the guided sequence is about60seconds; slower use is allowed without forced exit.
-
-Pause freezes active time and balloon; support/hidden tabs pause automatically. Stop retains stopped state, navigation retains interrupted state. Every5seconds checkpoints elapsed time: reload/crash may lose up to5seconds since last checkpoint. Pending unsaved operations are retained for this visit with explicit retry; reload can lose unsaved operations. The UI distinguishes saved state from pending/failed writes. History shows dates, active duration, outcome, skipped senses and linked transcripts. Recommended skill/reason and actual chosen skill are stored separately; direct entry has no recommendation reference. No clinical profile or score is stored. Clearing history requires confirmation, deletes conversations/requests/messages/sessions, and preserves preferences; reset preferences is separate. This is one local user's history with no authentication; use fictional data only.
-
-Support stays visible and is bundled independently of the backend/model. [Verified US resources and limits](docs/support-sources.md). Phrase matching can offer support for explicit fictional danger text, but is not risk assessment and can miss indirect statements. No contacts, monitoring or automatic routing occur.
-
-## Checks and organization
-
-```bash
-backend/.venv/bin/python -m pytest -q
-npm --prefix frontend test
-npm --prefix frontend run build
-PYTHONPATH=backend backend/.venv/bin/python scripts/evaluate_backend.py
-PYTHONPATH=backend backend/.venv/bin/python scripts/evaluate_guac.py
-python3 scripts/audit_publication.py
-```
-
-The publication audit examines Git's staged/tracked snapshot; stage intentional files before using it. Backend and evaluation tests use disposable databases and mocked provider transport; they do not count as live calls or browser observations. An upstream Starlette/TestClient httpx deprecation warning is known and does not fail tests.
-
-For a stable browser measurement use `npm --prefix frontend run build` then `npm --prefix frontend run preview`, rather than an editing/HMR session. See [verification](docs/verification.md), [Guac browser evidence](docs/guac-browser-observations.md), [recording instructions](docs/recordings/recording-script.md) and [clean-checkout evidence](docs/clean-checkout.md) for actual outcomes and pending checks.
-
-- `frontend/src/`: Vue views, deterministic clock, session queues and chat request guards; original balloon asset in `frontend/public/`.
-- `backend/app/`: FastAPI boundary, own SQLite schema, configuration and constrained model controller; `backend/tests/` disposable checks.
-- `docs/`: [assignment provenance](docs/assignment-source.md), [working rules](docs/class-working-rules.md), [design](docs/design-pipeline.md), [review](docs/agent-review.md), [evidence log](docs/evidence-log.md).
-- `prompts/`: preserved autonomous instructions and numbered phase sources.
-- `handoffs/current.md`: current Git/checkpoint/unfinished state; `AI-USE.md`: actual tools and roles.
-
-Milestones: October15,22,29,2026, all11:59PM Eastern. Student review, peer clean-checkout run and LMS submission are never claimed as agent actions.
+Part 3.1 is due October15,2026 at11:59PM Eastern. Student review and LMS submission remain human actions. Complete the verified design checkpoint and stop.

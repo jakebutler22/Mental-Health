@@ -1,3 +1,5 @@
+> Current scope overrides previous autonomous continuation: Part 3.1 only, general everyday audience. Preserve existing implementation, publish design, then stop. Later rules apply only when that work is requested.
+
 # Class working rules — current authorization
 
 
@@ -12,7 +14,7 @@ Carry these into the project:
 8. Define business rules with ordinary and boundary examples.
 9. Keep secrets in ignored backend-local configuration; never expose them in frontend code, prompts, logs, or recordings.
 10. Explicitly load backend configuration and provide a safe health check. Configured credentials and a successful provider request are separate facts.
-11. Keep API configuration, controller, and route work in separate sequential phases with an actual inspection checkpoint before frontend integration. The user authorized continuous execution, so perform and document each inspection without waiting for a new prompt.
+11. Keep API configuration, controller, and route work in separate sequential phases with an actual inspection checkpoint before frontend integration. The latest scope is Part 3.1 only; do not execute these later implementation phases until requested.
 12. Prove one known-input round trip before expanding to real input. Verify loading, no-result, failure, stale-result, and repeated-click behavior.
 13. Review visual references and the proposed design before implementation. Verify both appearance and behavior.
 14. Make coherent verified Git checkpoints. Review diffs and actually exercise applicable behavior before commits; identify the reviewer as the agent where appropriate. Record student review separately and only when it happened. After the initial main checkpoint, use feature branches; verify, review, commit, push, merge completed work, test main, and push main. Preserve unfinished work, inspect conflicts, and resolve routine in-scope conflicts without discarding user work. Commit/merge/push authorization is already supplied.

@@ -46,7 +46,7 @@ def test_live_negation_app_override_and_provider_header():
         return httpx.Response(200,json={'model':'nvidia/nemotron-test','choices':[{'message':{'content':json.dumps(provider_value())}}]})
     result=ModelController(LIVE,httpx.MockTransport(handler)).respond('No breathing. I want grounding.')
     assert result.recommended_skill=='grounding'
-    assert seen[0].headers['X-Title']=='Guac coursework'
+    assert seen[0].headers['X-Title']=='Guac prototype'
     assert result.configured_model_id==LIVE.model
 
 @pytest.mark.parametrize('changes',[{'recommended_skill':'STOP'},{'reason':'Hold your breath for a minute.'},{'reflection':'This disorder can be cured.'},{'action':'clarify','clarification':'Which?','recommended_skill':'breathing'}])

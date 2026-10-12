@@ -1,3 +1,5 @@
+> HISTORICAL / PRESERVED WORK. Current scope is [Part3.1 only](../prompts/12-part31-scope-correction.md). Later milestones remain pending; this record does not authorize continuation. Earlier audience framing and observations describe earlier source, not the current everyday design.
+
 # Guac backend revision checkpoints
 
 CHECK: Read prompts/11 product direction, current README/AGENTS/handoff/design, inspected existing controller/routes and Git changes. Existing backend config/database path/dependencies preserved. No credentials changed or new packages added.

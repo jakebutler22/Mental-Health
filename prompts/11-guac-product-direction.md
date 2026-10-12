@@ -1,3 +1,5 @@
+> HISTORICAL INSTRUCTION — superseded by [Part 3.1-only scope](12-part31-scope-correction.md). Preserve as evidence; do not execute later phases or automatic continuation.
+
 Continue the existing Assignment 3 project. Apply this updated product
 direction to the current implementation, then continue the remaining
 autonomous project work.

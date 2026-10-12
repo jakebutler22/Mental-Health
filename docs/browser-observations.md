@@ -1,3 +1,5 @@
+> HISTORICAL EVIDENCE. Current [Part3.1-only scope](../prompts/12-part31-scope-correction.md) supersedes earlier audience and automatic continuation. Preserve these observations tied to earlier source; do not expand later stages.
+
 # Actual browser observations — October 12, 2026
 
 Chrome through CUA operated the real Vue/FastAPI application at http://127.0.0.1:5174/ using ignored disposable .runtime/browser.sqlite3. Direct API browser pages on8001 returned ERR_BLOCKED_BY_CLIENT; actual frontend opened normally and proxied requests worked. No security bypass was used. Endpoint checks used HTTP clients separately.

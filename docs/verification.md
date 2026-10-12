@@ -1,3 +1,5 @@
+> HISTORICAL / PRESERVED WORK. Current scope is [Part3.1 only](../prompts/12-part31-scope-correction.md). Later milestones remain pending; this record does not authorize continuation. Earlier audience framing and observations describe earlier source, not the current everyday design.
+
 # Verification plan and capability record
 
 Current Guac checks: [backend checkpoint](guac-backend-checkpoints.md), [frontend checkpoint](guac-frontend-checkpoints.md), [evaluation](guac-evaluation.md), [actual browser observations](guac-browser-observations.md). The initial notes below are historical phase-specific observations; they do not describe the current implemented app.

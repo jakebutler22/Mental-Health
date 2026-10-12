@@ -1,3 +1,5 @@
+> HISTORICAL / PRESERVED WORK. Current scope is [Part3.1 only](../prompts/12-part31-scope-correction.md). Later milestones remain pending; this record does not authorize continuation. Earlier audience framing and observations describe earlier source, not the current everyday design.
+
 # Read-only reuse audit — October 12, 2026
 
 Confirmed new root: /Users/jakebutler/Documents/ChatGPT/Mental Health. Initial state: only .git, unborn main, no tracked files or configured remote. No existing unfinished application or handoff. Ancestor /Users/jakebutler/README.md says only “# instagram-card”; no relevant ancestor AGENTS found.

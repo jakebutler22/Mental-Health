@@ -1,21 +1,18 @@
-# Part 3.1 — Research and Design
+# Part 3.1 — Guac research and design
 
-Due October 15, 2026, 11:59 PM Eastern. Individual Campus Pause coursework prototype.
+Repository URL: https://github.com/jakebutler22/Mental-Health
+Submitted source commit: pending verified design checkpoint
 
-Repository URL: https://github.com/jakebutler22/Mental-Health.
-Submitted source commit: afe33f9f605c9e536fc3b7ebdfa39f3c525862d7.
-Accessible hosted evidence links: Source artifacts published at the repository; HTML mockup must be downloaded/opened locally. Visual review remains pending..
+Guac is intended for general everyday use. Fictional review examples cover a busy day, a work presentation and a difficult conversation. The submitted deliverable is an implementable design, static review mockup and flow; a working application is not required. Existing later-stage code is preserved without feature expansion. Parts 3.2/3.3 remain pending until requested.
 
-Design: warm cream/sage, optional short chat and direct skill entry; paced breathing 4s in/6s out with realistic balloon candidate; sensory grounding 5 seen/4 felt/3 heard/2 smelled/1 tasted. Fixed app sequences, pause/stop and support independent of model. Six breathing cycles take 60s; expected full instruction sequence 65s; grounding 65s under stated response assumptions. Timing not observed yet.
+Design/artifact links: [specification and R/D rationale](../../docs/design-pipeline.md), [reviewable HTML mockup](../../docs/screen-mockup.html), [renderable SVG flow](../../docs/design-flow.svg), [desktop capture](../../docs/evidence/part31-guac-desktop.jpg), [mobile capture](../../docs/evidence/part31-guac-mobile.jpg), [flow capture](../../docs/evidence/part31-guac-flow.jpg). GitHub renders SVG and captures; download/open HTML or use README's standard-library static preview. No hosted application is deployed.
 
-Evidence: [source/provenance](../../docs/assignment-source.md), [original design/R-D rationale/MVC/schema/model limits](../../docs/design-campus-pause-archive.md), [flow](../../docs/design-flow.svg), [screens](../../docs/screen-mockup.html), [reuse/config audit](../../docs/reuse-audit.md), [verification/requirement mapping](../../docs/verification.md), [actual evidence](../../docs/evidence-log.md), [AI use](../../AI-USE.md), [working rules](../../docs/class-working-rules.md).
+Prepared: avocado identity and efficient optional-chat/direct-entry journey; contextual reflection/recommendation/reason with explicit current preference/negation/correction/decline and at most one optional question; planned bounded class model role; app-owned sequence/timing/pause/stop and independent support; proposed SQLite conversations/requests/messages/sessions/preferences and recommendation-versus-actual-choice history; explicit colors/reduced motion/simpler view/recent repeat; all R1–R4/D1–D6 findings with feedback counts, alternatives and tradeoffs; unresolved model/region/privacy/device/response-time questions. Realistic green latex balloon, optional red,4-second inhale/6-second exhale/six cycles and exact5/4/3/2/1 grounding remain design requirements.
 
-Completed design work: flow/sketch, model boundaries and relevant context, conversations/messages/session/preferences schema and history, R1–R4/D1–D6 tradeoffs, user choice/stop/simple view, optional remembered color/recent skill, proposed controller contracts and future file map. Research mention counts are not effectiveness measurements. Student audience is a design choice.
+Timing is proposed:60 seconds guidance plus≤5seconds transitions, target≤90 seconds whole instruction sequence at intended pace. Grounding assumes12 seconds/sense; voluntary pauses/support time excluded explicitly, slower use permitted. Mockup low/middle/full images are static candidate renders, not animation/timing proof or a successful model conversation.
 
-Unresolved: review of design/balloon asset fidelity; exact class model and current live provider access; new project configuration/dependencies/port availability; verified independent support resources; semantic model-response checks; recording workflow. No working app, exercise timing, DB persistence, browser app test or peer evaluation claimed. Original screenshots were not inspected; user-provided structured summary is the source.
+Verification: [requirement checklist and actual checks](../../docs/part31-verification.md), [curated evidence/revisions](../../docs/evidence-log.md), [source provenance](../../docs/assignment-source.md), [AI use](../../AI-USE.md). Agent inspected rendered desktop/mobile/flow and files; narrowed layout has no overflow, target sizes/focus checked. Existing code tests were rerun only for copy regression; no later milestone completion or live/database behavior is inferred from them. Prior sources/evidence preserved, including [previous report](report-previous.md).
 
-Prepared for design review; not submission-ready until repository/commit fields and accessible evidence are verified. Final student review and submission are pending.
+Supplied research summary is the source; original screenshots were not independently inspected. Mention counts are feedback, not clinical effectiveness. General everyday audience and balloon are product choices, not validated outcomes. No diagnoses, monitoring, inferred clinical profiles or promises that a skill will fix a problem.
 
-Follow-up execution completed actual app visual evidence and agent design/code review, linked in [browser observations](../../docs/browser-observations.md). Original design source remains afe33f9f605c9e536fc3b7ebdfa39f3c525862d7; source/URL fields are real. Student review and LMS submission remain separate. All local artifact links have been checked and source/evidence publicly pushed; HTML sketch requires local viewing, not a deployed service.
-
-The later [Guac product revision](../../docs/design-pipeline.md) supersedes the provisional name/palette/default color without changing this historical source checkpoint.
+Part 3.1 design package prepared and agent-reviewed; student review and LMS upload are unclaimed human actions. After the authorized public checkpoint is verified, stop. No automatic Parts 3.2/3.3 continuation.
