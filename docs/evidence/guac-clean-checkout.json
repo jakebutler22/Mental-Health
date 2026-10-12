@@ -1,0 +1,69 @@
+{
+  "source_commit": "7c7742b1da5be66ea6a3bae9cb5ab4d7babcb1a2",
+  "clone_root": "/Users/jakebutler/Documents/ChatGPT/Mental Health/.verification/guac",
+  "working_tree_porcelain": "",
+  "installation": [
+    "python3 -m venv backend/.venv",
+    "backend/.venv/bin/python -m pip install -r backend/requirements.txt",
+    "cp backend/.env.example backend/.env",
+    "npm ci --prefix frontend"
+  ],
+  "checks": {
+    "backend_pytest": {
+      "passed": 54,
+      "failed": 0
+    },
+    "frontend_node": {
+      "passed": 20,
+      "failed": 0
+    },
+    "backend_evaluation": {
+      "passed": 20,
+      "failed": 0
+    },
+    "guac_evaluation": {
+      "passed": 26,
+      "failed": 0
+    },
+    "production_build": "passed",
+    "npm_audit": "0 vulnerabilities",
+    "source_index_audit_allow_pending_reports": "passed; source checkpoint intentionally precedes final report SHA; final publication audit must be strict"
+  },
+  "browser_observed": [
+    "fresh empty history/default mock",
+    "roommate looping contextual grounding recommendation",
+    "deliberate breathing alternative",
+    "default green paused balloon",
+    "stop saved locally"
+  ],
+  "health": {
+    "status": "ok",
+    "database_ready": true,
+    "mode": "mock",
+    "configuration_status": "mock",
+    "key_configured": false,
+    "model_configured": false,
+    "live_verified": false,
+    "live_call_limit": 50,
+    "live_attempts": 0
+  },
+  "preferences": {
+    "singleton": 1,
+    "explicit_balloon_color": null,
+    "simple_view": 0,
+    "reduced_motion": 0
+  },
+  "sessions": [
+    {
+      "skill": "breathing",
+      "state": "stopped",
+      "active_elapsed_ms": 748,
+      "recommended_skill": "grounding",
+      "recommendation_reason": "Noticing your surroundings may suit the scattered thoughts you described."
+    }
+  ],
+  "foreign_key_violations": [],
+  "runtime_copied_from_root": false,
+  "live_success": false,
+  "peer_run": false
+}

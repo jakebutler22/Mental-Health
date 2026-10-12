@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "scope": "Git index publication set",
+  "pending_reports_allowed": false,
+  "tracked_files": 177,
+  "markdown_files": 41,
+  "reports": [
+    {
+      "file": "submissions/3.1/report.md",
+      "source_commits": [
+        "afe33f9f605c9e536fc3b7ebdfa39f3c525862d7"
+      ]
+    },
+    {
+      "file": "submissions/3.2/report.md",
+      "source_commits": [
+        "8497873908b4318be2a1b8112c0401f466cd695b"
+      ]
+    },
+    {
+      "file": "submissions/3.3/report.md",
+      "source_commits": [
+        "7c7742b1da5be66ea6a3bae9cb5ab4d7babcb1a2"
+      ]
+    }
+  ],
+  "findings": []
+}

@@ -46,3 +46,7 @@ Backend30pytest cases, frontend15Node cases, deterministic backend evaluation20/
 Actual Chrome frontend5174 works; direct backend-page navigation blocked by client, so no general browser capability failure claimed. Grounding frozen build guided rendered-frame duration68.300seconds at scripted12seconds per sense plus tool/interaction overhead. No voluntary pauses/support excluded from that run. First90.7second operator-delayed run and HMR-interrupted rerun are retained as nonpassing/intended-pace evidence. Balloon low/middle/full observed0.000578/0.490026/0.993213inflation, attached knot/neutral highlights visible. Final breathing timing and other UI checks recorded in browser-observations.md.
 
 Live attempts were rejected by provider401; configured provider/model and successful live access remain distinct. Valid key and repeated live variation pending. Native recorder could not expose controllable recording window and browser capabilities have no video; exact fallback script exists. No recording claimed. Student review/peer run/LMS submission have not occurred.
+
+## Current Guac verified source
+
+7c7742b1da5be66ea6a3bae9cb5ab4d7babcb1a2: root and fresh clone54backend/20frontend/20general/26context cases plus production build pass. Real desktop/mobile/short-height/focus/support/whole-timing/persistence/failure evidence in guac-browser-observations.md. Exact clone Git clean, own database/config/dependencies, no runtime copied. Final strict publication audit addresses finalized source references separately.
