@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-12",
+  "mode": "actual Chrome frozen production preview",
+  "pace": "scripted twelve seconds per sense, no pause/support",
+  "observedStartToCompletionSeconds": 68.645,
+  "renderedFrameTiming": {
+    "elapsedMs": "68273.60000002384",
+    "entryMs": "1477.300000011921",
+    "finalInstructionFrameMs": "69776.3",
+    "firstInstructionFrameMs": "1476.3",
+    "guidedFrameDurationMs": "68300",
+    "state": "completed",
+    "step": "5"
+  }
+}

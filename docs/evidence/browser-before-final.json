@@ -1,0 +1,33 @@
+{
+  "stage": "before frozen preview final test",
+  "sessions": [
+    {
+      "id": "1b1becf2-7e12-4f83-b11d-47020b4dd4c0",
+      "skill": "breathing",
+      "state": "completed",
+      "active_elapsed_ms": 60000,
+      "step": 0,
+      "cycles": 6,
+      "version": 12
+    },
+    {
+      "id": "f94edd4e-c366-4ec1-b26e-19a5695b168e",
+      "skill": "grounding",
+      "state": "completed",
+      "active_elapsed_ms": 90707,
+      "step": 5,
+      "cycles": 0,
+      "version": 23
+    },
+    {
+      "id": "2eb7b6df-0fca-403b-9aef-6a11bbbd3f17",
+      "skill": "grounding",
+      "state": "interrupted",
+      "active_elapsed_ms": 30044,
+      "step": 2,
+      "cycles": 0,
+      "version": 9
+    }
+  ],
+  "foreign_key_check": []
+}

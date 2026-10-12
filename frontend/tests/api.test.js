@@ -1,0 +1,7 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {createApi,createRequestGate} from '../src/lib/api.js';
+test('empty/malformed/failure/network responses are explicit',async()=>{
+ for(const fetcher of [async()=>({ok:true,status:200,json:async()=>null}),async()=>({ok:true,status:200,json:async()=>{throw Error()}}),async()=>({ok:false,status:503,json:async()=>({detail:{message:'Unavailable'}})}),async()=>{throw Error('secret provider failure')}])await assert.rejects(createApi(fetcher)('/health'));
+});
+test('repeated clicks ignored and stale result rejected',async()=>{const gate=createRequestGate();let resolve;const pending=gate.run(()=>new Promise(r=>resolve=r));assert.deepEqual(await gate.run(()=>42),{ignored:true});gate.invalidate();resolve(1);assert.deepEqual(await pending,{stale:true});assert.deepEqual(await gate.run(async()=>2),{value:2});});
+
+test('finite timeout includes hanging response body and composes caller abort',async()=>{await assert.rejects(createApi(async()=>({ok:true,status:200,json:()=>new Promise(()=>{})}),10)('/health'),e=>e.code==='timeout');const controller=new AbortController();const request=createApi(async(_,options)=>new Promise((_,reject)=>options.signal.addEventListener('abort',()=>reject(new DOMException('Aborted','AbortError')))),100)('/health',{signal:controller.signal});controller.abort();await assert.rejects(request,e=>e.name==='AbortError');});

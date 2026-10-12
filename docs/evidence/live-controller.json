@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-12",
+  "mode": "live",
+  "provider": "OpenRouter",
+  "configured_model": "nvidia/nemotron-3.5-lightning:free",
+  "results": [
+    {
+      "status": "failed",
+      "code": "provider_unavailable",
+      "input": "Fictional student: I have an exam tomorrow.",
+      "elapsed_seconds": 0.198,
+      "attempts": 1
+    },
+    {
+      "status": "failed",
+      "code": "provider_unavailable",
+      "input": "Fictional student: My roommate is noisy while I study.",
+      "elapsed_seconds": 0.123,
+      "attempts": 2
+    }
+  ]
+}

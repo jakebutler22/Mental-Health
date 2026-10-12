@@ -1,0 +1,37 @@
+{
+  "counts": {
+    "conversations": 1,
+    "messages": 2,
+    "model_requests": 1,
+    "sessions": 3
+  },
+  "sessions": [
+    {
+      "skill": "breathing",
+      "state": "stopped",
+      "active_elapsed_ms": 46246,
+      "conversation_id": "adea4d04-3569-443e-86ab-7288b1ee6a54"
+    },
+    {
+      "skill": "breathing",
+      "state": "interrupted",
+      "active_elapsed_ms": 665,
+      "conversation_id": "adea4d04-3569-443e-86ab-7288b1ee6a54"
+    },
+    {
+      "skill": "grounding",
+      "state": "stopped",
+      "active_elapsed_ms": 528,
+      "conversation_id": "adea4d04-3569-443e-86ab-7288b1ee6a54"
+    }
+  ],
+  "preferences": [
+    {
+      "singleton": 1,
+      "explicit_balloon_color": null,
+      "simple_view": 0,
+      "reduced_motion": 0
+    }
+  ],
+  "foreign_key_check": []
+}

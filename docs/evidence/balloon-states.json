@@ -1,0 +1,15 @@
+{
+  "mode": "actual browser red original asset",
+  "lowState": {
+    "inflation": 0.0005783780904959657,
+    "transform": "matrix(0.660197, 0, 0, 0.750145, 0, 0)"
+  },
+  "middleState": {
+    "inflation": 0.4900255881503109,
+    "transform": "matrix(0.826609, 0, 0, 0.872506, 0, 0)"
+  },
+  "fullState": {
+    "inflation": 0.9932128902673956,
+    "transform": "matrix(0.997692, 0, 0, 0.998303, 0, 0)"
+  }
+}

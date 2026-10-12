@@ -1,0 +1,13 @@
+{
+  "actual_provider_attempt": true,
+  "successful_live_response": false,
+  "requests": [
+    {
+      "request_id": "0c856e59-3086-493c-b7b7-22a8035ff4eb",
+      "status": "failed",
+      "mode": "live",
+      "configured_model_id": "nvidia/nemotron-3.5-lightning:free",
+      "sanitized_error_code": "provider_authentication"
+    }
+  ]
+}
