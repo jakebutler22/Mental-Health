@@ -1,0 +1,50 @@
+{
+  "repository": "https://github.com/jakebutler22/Mental-Health",
+  "public": true,
+  "submitted_design_commit": "aa2993dd6e7362e561ba9f308f57fb42dd02a4a1",
+  "reviewer": "primary Codex agent",
+  "design_artifacts": {
+    "docs/design-pipeline.md": {
+      "public_readable": true,
+      "url": "https://github.com/jakebutler22/Mental-Health/blob/aa2993dd6e7362e561ba9f308f57fb42dd02a4a1/docs/design-pipeline.md",
+      "matches_reviewed_local_file": true
+    },
+    "docs/screen-mockup.html": {
+      "public_readable": true,
+      "url": "https://github.com/jakebutler22/Mental-Health/blob/aa2993dd6e7362e561ba9f308f57fb42dd02a4a1/docs/screen-mockup.html",
+      "matches_reviewed_local_file": true
+    },
+    "docs/design-flow.svg": {
+      "public_readable": true,
+      "url": "https://github.com/jakebutler22/Mental-Health/blob/aa2993dd6e7362e561ba9f308f57fb42dd02a4a1/docs/design-flow.svg",
+      "matches_reviewed_local_file": true
+    },
+    "docs/evidence/part31-guac-desktop.jpg": {
+      "public_readable": true,
+      "url": "https://github.com/jakebutler22/Mental-Health/blob/aa2993dd6e7362e561ba9f308f57fb42dd02a4a1/docs/evidence/part31-guac-desktop.jpg"
+    },
+    "docs/evidence/part31-guac-mobile.jpg": {
+      "public_readable": true,
+      "url": "https://github.com/jakebutler22/Mental-Health/blob/aa2993dd6e7362e561ba9f308f57fb42dd02a4a1/docs/evidence/part31-guac-mobile.jpg"
+    },
+    "docs/part31-verification.md": {
+      "public_readable": true,
+      "url": "https://github.com/jakebutler22/Mental-Health/blob/aa2993dd6e7362e561ba9f308f57fb42dd02a4a1/docs/part31-verification.md",
+      "matches_reviewed_local_file": true
+    }
+  },
+  "actual_checks": {
+    "svg_xml": "valid",
+    "html_local_links_missing": 0,
+    "static_script_tags": 0,
+    "desktop_and_mobile": "actual Chrome visual review",
+    "mobile_viewport": "390x844; scrollWidth390; three balloon images loaded",
+    "touch_targets": "sample44-64px",
+    "keyboard_focus": "3px pit outline",
+    "copy_regression": "54 backend and20 frontend tests; production build pass"
+  },
+  "proposed_behavior_not_runtime_proof": true,
+  "later_milestones": "pending; no automatic continuation",
+  "student_review": false,
+  "lms_submitted": false
+}

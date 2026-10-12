@@ -1,7 +1,8 @@
 # Part 3.1 — Guac research and design
 
 Repository URL: https://github.com/jakebutler22/Mental-Health
-Submitted source commit: pending verified design checkpoint
+Submitted source commit: aa2993dd6e7362e561ba9f308f57fb42dd02a4a1
+[Exact submitted design checkpoint](https://github.com/jakebutler22/Mental-Health/tree/aa2993dd6e7362e561ba9f308f57fb42dd02a4a1). Public commit and reviewed artifact contents verified against local files.
 
 Guac is intended for general everyday use. Fictional review examples cover a busy day, a work presentation and a difficult conversation. The submitted deliverable is an implementable design, static review mockup and flow; a working application is not required. Existing later-stage code is preserved without feature expansion. Parts 3.2/3.3 remain pending until requested.
 
@@ -16,3 +17,7 @@ Verification: [requirement checklist and actual checks](../../docs/part31-verifi
 Supplied research summary is the source; original screenshots were not independently inspected. Mention counts are feedback, not clinical effectiveness. General everyday audience and balloon are product choices, not validated outcomes. No diagnoses, monitoring, inferred clinical profiles or promises that a skill will fix a problem.
 
 Part 3.1 design package prepared and agent-reviewed; student review and LMS upload are unclaimed human actions. After the authorized public checkpoint is verified, stop. No automatic Parts 3.2/3.3 continuation.
+
+Immutable public artifacts: [specification](https://github.com/jakebutler22/Mental-Health/blob/aa2993dd6e7362e561ba9f308f57fb42dd02a4a1/docs/design-pipeline.md), [SVG flow](https://github.com/jakebutler22/Mental-Health/blob/aa2993dd6e7362e561ba9f308f57fb42dd02a4a1/docs/design-flow.svg), [HTML mockup](https://github.com/jakebutler22/Mental-Health/blob/aa2993dd6e7362e561ba9f308f57fb42dd02a4a1/docs/screen-mockup.html), [desktop capture](https://github.com/jakebutler22/Mental-Health/blob/aa2993dd6e7362e561ba9f308f57fb42dd02a4a1/docs/evidence/part31-guac-desktop.jpg), [mobile capture](https://github.com/jakebutler22/Mental-Health/blob/aa2993dd6e7362e561ba9f308f57fb42dd02a4a1/docs/evidence/part31-guac-mobile.jpg). [Publication evidence](../../docs/evidence/part31-design-checkpoint.json) records actual checks.
+
+**Part 3.1 design work and authorized source publication are complete. STOP; Parts 3.2 and 3.3 remain pending until requested.** Student review and LMS upload remain separate human actions.

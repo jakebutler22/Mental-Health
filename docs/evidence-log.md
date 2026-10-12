@@ -6,6 +6,8 @@ Current revision: [scope correction](../prompts/12-part31-scope-correction.md). 
 
 Following historical log records earlier source and broader scope; it does not authorize continuation. New Part3.1 design SHA and public report links are recorded after the checkpoint. Stop after verification.
 
+Part 3.1 checkpoint **aa2993dd6e7362e561ba9f308f57fb42dd02a4a1** merged/pushed and public commit/artifacts verified. Final report identifies immutable artifact links and the actual design SHA; strict publication audit required for final metadata. This is a design milestone; later code/evidence preserved and later tasks stopped.
+
 ## Historical execution evidence
 
 # Curated evidence — October 12, 2026
