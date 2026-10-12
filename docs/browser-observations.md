@@ -27,3 +27,5 @@ Missing-live configuration label observed [screen](evidence/live-missing-configu
 390×844viewport: support top781.5/bottom832, stop top573.49/bottom607.49, no horizontal overflow. [Mobile home](evidence/mobile-home.jpg), [exercise](evidence/mobile-breathing.jpg); viewport reset. Desktop support top784.5/bottom839 in858pxviewport. Chrome warning/error log after restart/transcript checks was empty.
 
 Visibility limitation: minimizing/switching the native Chrome tab under debugger still reported document.hidden=false; this did not exercise the visibilitychange pause hook. Source hook exists but actual background-event behavior remains unverified outside this automation context. Manual pause/support pause verified separately. Do not label the hidden-tab attempt a pass.
+
+Final main smoke: own root canonical ignored SQLite/defaultmock/red opened after verification cleanup; direct breathing→stop→home worked, support visible, no credentials required. [Main screenshot](evidence/main-smoke.jpg). Application/runinstructions unchanged from exact clean-verified source; later commits are evidence/reports/handoff only.
