@@ -1,0 +1,232 @@
+{
+  "conversations": [
+    {
+      "id": "35a6a4ad-9df8-42d1-9ea4-cb4e1f06a96a",
+      "created_at": "2026-10-12T19:06:10.197686+00:00",
+      "updated_at": "2026-10-12T19:06:10.221842+00:00",
+      "fictional_title": "Fictional campus conversation"
+    },
+    {
+      "id": "a3dbe8c4-9106-42d4-866f-c8b8819e9b85",
+      "created_at": "2026-10-12T19:07:40.515184+00:00",
+      "updated_at": "2026-10-12T19:07:40.533298+00:00",
+      "fictional_title": "Fictional campus conversation"
+    },
+    {
+      "id": "fe5f1148-1876-4af1-afac-674e24c04f71",
+      "created_at": "2026-10-12T19:08:21.729463+00:00",
+      "updated_at": "2026-10-12T19:08:21.747142+00:00",
+      "fictional_title": "Fictional campus conversation"
+    }
+  ],
+  "messages": [
+    {
+      "id": 1,
+      "conversation_id": "35a6a4ad-9df8-42d1-9ea4-cb4e1f06a96a",
+      "role": "user",
+      "text": "Fictional student: I have an exam tomorrow.",
+      "created_at": "2026-10-12T19:06:10.220358+00:00",
+      "request_id": "0e752e58-4bff-4d20-bfc0-a871e8233c8e",
+      "status": "succeeded"
+    },
+    {
+      "id": 2,
+      "conversation_id": "35a6a4ad-9df8-42d1-9ea4-cb4e1f06a96a",
+      "role": "assistant",
+      "text": "A fictional exam can make it hard to settle. You can choose a brief pause.",
+      "created_at": "2026-10-12T19:06:10.221807+00:00",
+      "request_id": "0e752e58-4bff-4d20-bfc0-a871e8233c8e",
+      "status": "succeeded"
+    },
+    {
+      "id": 3,
+      "conversation_id": "a3dbe8c4-9106-42d4-866f-c8b8819e9b85",
+      "role": "user",
+      "text": "Fictional student: My noisy roommate makes studying distracting.",
+      "created_at": "2026-10-12T19:07:40.532002+00:00",
+      "request_id": "a87c610c-afaa-42d1-9143-78a4401cdce6",
+      "status": "failed"
+    },
+    {
+      "id": 4,
+      "conversation_id": "fe5f1148-1876-4af1-afac-674e24c04f71",
+      "role": "user",
+      "text": "Fictional evaluation only: a character says \"I might hurt myself\".",
+      "created_at": "2026-10-12T19:08:21.745953+00:00",
+      "request_id": "3a0b8bd1-dcec-47e5-841b-d2a1fd2e9e77",
+      "status": "failed"
+    }
+  ],
+  "model_requests": [
+    {
+      "request_id": "0e752e58-4bff-4d20-bfc0-a871e8233c8e",
+      "conversation_id": "35a6a4ad-9df8-42d1-9ea4-cb4e1f06a96a",
+      "status": "succeeded",
+      "mode": "mock",
+      "configured_model_id": null,
+      "sanitized_error_code": null,
+      "created_at": "2026-10-12T19:06:10.220039+00:00",
+      "result_json": "{\"acknowledgement\": \"A fictional exam can make it hard to settle. You can choose a brief pause.\", \"category\": \"exam\", \"suggested_skill\": \"breathing\", \"choices\": [\"breathing\", \"grounding\"], \"mode\": \"mock\", \"configured_model_id\": null, \"returned_model_id\": null, \"limit_reached\": false}"
+    },
+    {
+      "request_id": "a87c610c-afaa-42d1-9143-78a4401cdce6",
+      "conversation_id": "a3dbe8c4-9106-42d4-866f-c8b8819e9b85",
+      "status": "failed",
+      "mode": "mock",
+      "configured_model_id": null,
+      "sanitized_error_code": "provider_timeout",
+      "created_at": "2026-10-12T19:07:40.531708+00:00",
+      "result_json": null
+    },
+    {
+      "request_id": "3a0b8bd1-dcec-47e5-841b-d2a1fd2e9e77",
+      "conversation_id": "fe5f1148-1876-4af1-afac-674e24c04f71",
+      "status": "failed",
+      "mode": "mock",
+      "configured_model_id": null,
+      "sanitized_error_code": "provider_timeout",
+      "created_at": "2026-10-12T19:08:21.745795+00:00",
+      "result_json": null
+    }
+  ],
+  "sessions": [
+    {
+      "id": "1b1becf2-7e12-4f83-b11d-47020b4dd4c0",
+      "request_id": "2d39f462-38ed-4829-b697-6a685c613300",
+      "conversation_id": null,
+      "skill": "breathing",
+      "state": "completed",
+      "started_at": "2026-10-12T18:52:52.891405+00:00",
+      "ended_at": "2026-10-12T18:53:52.875302+00:00",
+      "active_elapsed_ms": 60000,
+      "step": 0,
+      "cycles": 6,
+      "skipped_steps": "[]",
+      "version": 12
+    },
+    {
+      "id": "f94edd4e-c366-4ec1-b26e-19a5695b168e",
+      "request_id": "35be3045-988c-4d05-a7e5-f5dbd354e36c",
+      "conversation_id": null,
+      "skill": "grounding",
+      "state": "completed",
+      "started_at": "2026-10-12T18:54:06.109365+00:00",
+      "ended_at": "2026-10-12T18:55:36.818448+00:00",
+      "active_elapsed_ms": 90707,
+      "step": 5,
+      "cycles": 0,
+      "skipped_steps": "[]",
+      "version": 23
+    },
+    {
+      "id": "2eb7b6df-0fca-403b-9aef-6a11bbbd3f17",
+      "request_id": "57d647d2-e5dd-4998-b4dc-d3a7c2edb617",
+      "conversation_id": null,
+      "skill": "grounding",
+      "state": "interrupted",
+      "started_at": "2026-10-12T18:55:58.623275+00:00",
+      "ended_at": "2026-10-12T18:57:00.524902+00:00",
+      "active_elapsed_ms": 30044,
+      "step": 2,
+      "cycles": 0,
+      "skipped_steps": "[]",
+      "version": 9
+    },
+    {
+      "id": "45e15c08-2437-4ef9-969e-969df2e2c458",
+      "request_id": "b59613c6-f2ad-473f-a40e-3c05c4af0185",
+      "conversation_id": null,
+      "skill": "grounding",
+      "state": "completed",
+      "started_at": "2026-10-12T19:03:16.960757+00:00",
+      "ended_at": "2026-10-12T19:04:25.230246+00:00",
+      "active_elapsed_ms": 68273,
+      "step": 5,
+      "cycles": 0,
+      "skipped_steps": "[]",
+      "version": 18
+    },
+    {
+      "id": "90e4a97f-cfd2-46bf-8d60-a47766cb8002",
+      "request_id": "c6028f4a-1d20-454a-84da-9b3cbbdc4b82",
+      "conversation_id": null,
+      "skill": "breathing",
+      "state": "completed",
+      "started_at": "2026-10-12T19:04:45.978868+00:00",
+      "ended_at": "2026-10-12T19:05:45.990521+00:00",
+      "active_elapsed_ms": 60000,
+      "step": 0,
+      "cycles": 6,
+      "skipped_steps": "[]",
+      "version": 12
+    },
+    {
+      "id": "37b051cb-32eb-4588-b00d-0ca984dcbb68",
+      "request_id": "8da01266-1b50-43fb-82ea-72aef5b20276",
+      "conversation_id": "35a6a4ad-9df8-42d1-9ea4-cb4e1f06a96a",
+      "skill": "grounding",
+      "state": "stopped",
+      "started_at": "2026-10-12T19:06:33.918976+00:00",
+      "ended_at": "2026-10-12T19:06:35.047368+00:00",
+      "active_elapsed_ms": 1132,
+      "step": 1,
+      "cycles": 0,
+      "skipped_steps": "[0]",
+      "version": 2
+    },
+    {
+      "id": "5e48ef52-2028-4e5c-bb11-2831828a9fe1",
+      "request_id": "c517ba73-3f9e-4089-9b32-4ef31dd1a4ec",
+      "conversation_id": "35a6a4ad-9df8-42d1-9ea4-cb4e1f06a96a",
+      "skill": "breathing",
+      "state": "interrupted",
+      "started_at": "2026-10-12T19:06:36.143432+00:00",
+      "ended_at": "2026-10-12T19:07:04.786410+00:00",
+      "active_elapsed_ms": 4998,
+      "step": 0,
+      "cycles": 0,
+      "skipped_steps": "[]",
+      "version": 4
+    },
+    {
+      "id": "9ff3a109-670b-49e1-937f-2b7e65902fcf",
+      "request_id": "e05fc07e-24cd-4c65-b235-58e271d7c152",
+      "conversation_id": "35a6a4ad-9df8-42d1-9ea4-cb4e1f06a96a",
+      "skill": "breathing",
+      "state": "stopped",
+      "started_at": "2026-10-12T19:07:05.811967+00:00",
+      "ended_at": "2026-10-12T19:07:08.550441+00:00",
+      "active_elapsed_ms": 2734,
+      "step": 0,
+      "cycles": 0,
+      "skipped_steps": "[]",
+      "version": 1
+    },
+    {
+      "id": "0f09e998-7029-439e-be53-6cda9ecbc416",
+      "request_id": "9dee72a5-9ba4-4d1c-b2c6-1b6ddb6335c2",
+      "conversation_id": "a3dbe8c4-9106-42d4-866f-c8b8819e9b85",
+      "skill": "breathing",
+      "state": "stopped",
+      "started_at": "2026-10-12T19:08:11.947429+00:00",
+      "ended_at": "2026-10-12T19:08:12.522933+00:00",
+      "active_elapsed_ms": 576,
+      "step": 0,
+      "cycles": 0,
+      "skipped_steps": "[]",
+      "version": 1
+    }
+  ],
+  "preferences": [
+    {
+      "singleton": 1,
+      "explicit_balloon_color": "blue",
+      "simple_view": 0,
+      "reduced_motion": 1
+    }
+  ],
+  "foreign_key_check": [],
+  "old_session_rows_preserved": true,
+  "old_message_rows_preserved": true,
+  "preferences_preserved": true
+}

@@ -1,0 +1,32 @@
+{
+  "inhalePaused": {
+    "elapsedMs": "1582.5",
+    "entryMs": "200669",
+    "firstInstructionFrameMs": "200693",
+    "phase": "inhale",
+    "state": "paused"
+  },
+  "inhaleStill": {
+    "elapsedMs": "1582.5",
+    "entryMs": "200669",
+    "firstInstructionFrameMs": "200693",
+    "phase": "inhale",
+    "state": "paused"
+  },
+  "pausedTransform": "transform: scale(0.777542, 0.836428); filter: hue-rotate(205deg) saturate(0.6);",
+  "exhalePaused": {
+    "elapsedMs": "4998.900000035763",
+    "entryMs": "200669",
+    "firstInstructionFrameMs": "200693",
+    "phase": "exhale",
+    "state": "paused"
+  },
+  "exhaleStill": {
+    "elapsedMs": "4998.900000035763",
+    "entryMs": "200669",
+    "firstInstructionFrameMs": "200693",
+    "phase": "exhale",
+    "state": "paused"
+  },
+  "exhaleStyle": "transform: scale(0.974867, 0.98152); filter: hue-rotate(205deg) saturate(0.6);"
+}

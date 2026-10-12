@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-12",
+  "mode": "actual Chrome frozen production preview",
+  "pauseOrSupport": false,
+  "renderedFrameTiming": {
+    "elapsedMs": "60000",
+    "entryMs": "90503.30000001192",
+    "finalInstructionFrameMs": "150542.9",
+    "firstInstructionFrameMs": "90526.3",
+    "guidedFrameDurationMs": "60016.59999999999",
+    "phase": "done",
+    "state": "completed"
+  }
+}

@@ -35,3 +35,10 @@ Three invariants across cases: (1) support and immediate stop remain reachable r
 | Real URL/source commit/accessibility | PENDING; no remote/commit exists, hosted links not checked |
 
 Artifact preview outcome: Codex file opening queued; in-app browser file:// preview rejected by protocol policy. No browser workaround attempted. Visual rendering review is pending; XML/link checks are not visual QA. Documentation completion does not imply submission readiness.
+
+## Executed independent checkpoints (updated)
+Backend30pytest cases, frontend15Node cases, deterministic backend evaluation20/20, production build passed. Root test-import failure corrected with pytest.ini; strict integer/coercion, late-write/offline-session loss, lost-response version conflict and deletion/in-flight boundaries drove actual regressions. See backend/frontend checkpoints and agent-review.md. No upstream deprecation warning hidden.
+
+Actual Chrome frontend5174 works; direct backend-page navigation blocked by client, so no general browser capability failure claimed. Grounding frozen build guided rendered-frame duration68.300seconds at scripted12seconds per sense plus tool/interaction overhead. No voluntary pauses/support excluded from that run. First90.7second operator-delayed run and HMR-interrupted rerun are retained as nonpassing/intended-pace evidence. Balloon low/middle/full observed0.000578/0.490026/0.993213inflation, attached knot/neutral highlights visible. Final breathing timing and other UI checks recorded in browser-observations.md.
+
+Live attempts were rejected by provider401; configured provider/model and successful live access remain distinct. Valid key and repeated live variation pending. Native recorder could not expose controllable recording window and browser capabilities have no video; exact fallback script exists. No recording claimed. Student review/peer run/LMS submission have not occurred.

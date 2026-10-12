@@ -1,0 +1,145 @@
+{
+  "endpoint": "http://127.0.0.1:8002/api",
+  "mode": "mock",
+  "responses": [
+    {
+      "http": 200,
+      "body": {
+        "request_id": "roundtrip-exam",
+        "conversation_id": "b7fafc26-7bc1-49ca-b48a-fb4a26b705cd",
+        "status": "succeeded",
+        "mode": "mock",
+        "error_code": null,
+        "messages": [
+          {
+            "id": 1,
+            "conversation_id": "b7fafc26-7bc1-49ca-b48a-fb4a26b705cd",
+            "role": "user",
+            "text": "Fictional student has an exam tomorrow.",
+            "created_at": "2026-10-12T18:54:27.438872+00:00",
+            "request_id": "roundtrip-exam",
+            "status": "succeeded"
+          },
+          {
+            "id": 2,
+            "conversation_id": "b7fafc26-7bc1-49ca-b48a-fb4a26b705cd",
+            "role": "assistant",
+            "text": "A fictional exam can make it hard to settle. You can choose a brief pause.",
+            "created_at": "2026-10-12T18:54:27.439307+00:00",
+            "request_id": "roundtrip-exam",
+            "status": "succeeded"
+          }
+        ],
+        "result": {
+          "acknowledgement": "A fictional exam can make it hard to settle. You can choose a brief pause.",
+          "category": "exam",
+          "suggested_skill": "breathing",
+          "choices": [
+            "breathing",
+            "grounding"
+          ],
+          "mode": "mock",
+          "configured_model_id": null,
+          "returned_model_id": null,
+          "limit_reached": false
+        }
+      }
+    },
+    {
+      "http": 200,
+      "body": {
+        "request_id": "roundtrip-roommate",
+        "conversation_id": "b7fafc26-7bc1-49ca-b48a-fb4a26b705cd",
+        "status": "succeeded",
+        "mode": "mock",
+        "error_code": null,
+        "messages": [
+          {
+            "id": 3,
+            "conversation_id": "b7fafc26-7bc1-49ca-b48a-fb4a26b705cd",
+            "role": "user",
+            "text": "Fictional student has a noisy roommate.",
+            "created_at": "2026-10-12T18:54:27.440605+00:00",
+            "request_id": "roundtrip-roommate",
+            "status": "succeeded"
+          },
+          {
+            "id": 4,
+            "conversation_id": "b7fafc26-7bc1-49ca-b48a-fb4a26b705cd",
+            "role": "assistant",
+            "text": "A fictional roommate situation can feel distracting. You can choose a brief pause.",
+            "created_at": "2026-10-12T18:54:27.441006+00:00",
+            "request_id": "roundtrip-roommate",
+            "status": "succeeded"
+          }
+        ],
+        "result": {
+          "acknowledgement": "A fictional roommate situation can feel distracting. You can choose a brief pause.",
+          "category": "roommate",
+          "suggested_skill": "grounding",
+          "choices": [
+            "breathing",
+            "grounding"
+          ],
+          "mode": "mock",
+          "configured_model_id": null,
+          "returned_model_id": null,
+          "limit_reached": false
+        }
+      }
+    },
+    {
+      "duplicate_http": 200,
+      "body": {
+        "request_id": "roundtrip-exam",
+        "conversation_id": "b7fafc26-7bc1-49ca-b48a-fb4a26b705cd",
+        "status": "succeeded",
+        "mode": "mock",
+        "error_code": null,
+        "messages": [
+          {
+            "id": 1,
+            "conversation_id": "b7fafc26-7bc1-49ca-b48a-fb4a26b705cd",
+            "role": "user",
+            "text": "Fictional student has an exam tomorrow.",
+            "created_at": "2026-10-12T18:54:27.438872+00:00",
+            "request_id": "roundtrip-exam",
+            "status": "succeeded"
+          },
+          {
+            "id": 2,
+            "conversation_id": "b7fafc26-7bc1-49ca-b48a-fb4a26b705cd",
+            "role": "assistant",
+            "text": "A fictional exam can make it hard to settle. You can choose a brief pause.",
+            "created_at": "2026-10-12T18:54:27.439307+00:00",
+            "request_id": "roundtrip-exam",
+            "status": "succeeded"
+          }
+        ],
+        "result": {
+          "acknowledgement": "A fictional exam can make it hard to settle. You can choose a brief pause.",
+          "category": "exam",
+          "suggested_skill": "breathing",
+          "choices": [
+            "breathing",
+            "grounding"
+          ],
+          "mode": "mock",
+          "configured_model_id": null,
+          "returned_model_id": null,
+          "limit_reached": false
+        }
+      }
+    },
+    {
+      "invalid_http": 422
+    }
+  ],
+  "counts": {
+    "conversations": 1,
+    "messages": 4,
+    "model_requests": 2,
+    "sessions": 0
+  },
+  "foreign_key_check": []
+}
